@@ -1,0 +1,165 @@
+{
+  "home": {
+    "hero": {
+      "badge": "Bienvenue dans l'avenir du développement web",
+      "title": "Construire des",
+      "titleHighlight": "Expériences Digitales à l'Échelle",
+      "subtitle": "Solutions modernes de développement web pour les entreprises ambitieuses. Du concept au déploiement, nous construisons des applications rapides, belles et évolutives.",
+      "ctaPrimary": "Démarrer Votre Projet",
+      "ctaSecondary": "Voir Notre Travail"
+    },
+    "services": {
+      "title": "Nos Services",
+      "subtitle": "Solutions complètes de développement web adaptées à vos besoins commerciaux",
+      "cta": "Voir Tous les Services",
+      "webdev": {
+        "title": "Développement Web",
+        "description": "Sites web et applications web personnalisés construits avec des frameworks modernes et les meilleures pratiques.",
+        "features": {
+          "0": "React & Next.js",
+          "1": "TypeScript",
+          "2": "Design Responsive"
+        }
+      },
+      "ecommerce": {
+        "title": "Solutions E-Commerce",
+        "description": "Boutiques en ligne complètes avec intégration de paiement, gestion d'inventaire et analyses.",
+        "features": {
+          "0": "Shopify & WooCommerce",
+          "1": "Passerelles de Paiement",
+          "2": "Gestion de Produits"
+        }
+      },
+      "backend": {
+        "title": "Développement Backend",
+        "description": "API robustes et solutions côté serveur pour alimenter vos applications.",
+        "features": {
+          "0": "REST & GraphQL",
+          "1": "Node.js & Python",
+          "2": "Infrastructure Cloud"
+        }
+      },
+      "performance": {
+        "title": "Optimisation des Performances",
+        "description": "Accélérez votre site et améliorez l'expérience utilisateur avec des optimisations ciblées.",
+        "features": {
+          "0": "Core Web Vitals",
+          "1": "Optimisation SEO",
+          "2": "Intégration CDN"
+        }
+      }
+    },
+    "projects": {
+      "title": "Projets Vedettes",
+      "subtitle": "Un aperçu de nos travaux récents et de nos collaborations clientes réussies",
+      "cta": "Voir Tous les Projets",
+      "project1": {
+        "title": "Plateforme E-Commerce",
+        "description": "Boutique en ligne moderne avec intégration de paiement, gestion d'inventaire et tableau de bord d'analyse.",
+        "tags": {
+          "0": "Next.js",
+          "1": "Stripe",
+          "2": "PostgreSQL"
+        }
+      },
+      "project2": {
+        "title": "Tableau de Bord SaaS",
+        "description": "Tableau de bord administrateur riche en fonctionnalités avec visualisation de données en temps réel et outils de collaboration d'équipe.",
+        "tags": {
+          "0": "React",
+          "1": "TypeScript",
+          "2": "Tailwind"
+        }
+      },
+      "project3": {
+        "title": "Site Portfolio",
+        "description": "Site portfolio époustouflant avec animations fluides, études de cas et gestion de contacts.",
+        "tags": {
+          "0": "Next.js",
+          "1": "Framer Motion",
+          "2": "CMS"
+        }
+      }
+    },
+    "about": {
+      "title": "Pourquoi Nous Choisir?",
+      "subtitle": "Nous ne sommes pas seulement des développeurs – nous sommes vos partenaires dans le succès digital. Avec des années d'expérience et une passion pour l'innovation, nous livrons des solutions qui dépassent les attentes.",
+      "cta": "Travaillons Ensemble",
+      "benefits": [
+        "Stack technologique moderne avec des frameworks de pointe",
+        "Approche de design mobile-first et responsive",
+        "Optimisé pour le SEO pour une visibilité maximale",
+        "Délais rapides sans compromis sur la qualité",
+        "Support et maintenance en cours",
+        "Communication transparente tout au long"
+      ]
+    },
+    "cta": {
+      "title": "Prêt à Démarrer Votre Projet?",
+      "subtitle": "Donnons vie à vos idées. Contactez-nous dès aujourd'hui pour une consultation gratuite et un devis.",
+      "button1": "Commencer",
+      "button2": "Voir le Portfolio",
+      "trust1": "Temps de Réponse Rapide",
+      "trust2": "Devis Sans Engagement",
+      "trust3": "Tarification Flexible"
+    },
+    "contact": {
+      "title": "Contactez-Nous",
+      "subtitle": "Vous avez un projet en tête? Nous aimerions entendre parler de vous.",
+      "email": "Email",
+      "phone": "Téléphone",
+      "location": "Localisation",
+      "emailValue": "contact@webdev.com",
+      "phoneValue": "+32 123 456 789",
+      "locationValue": "Bruxelles, Belgique"
+    }
+  },
+  "nav": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "blog": "Blog",
+    "contact": "Contact",
+    "getStarted": "Commencer"
+  },
+  "footer": {
+    "description": "Votre partenaire de confiance pour les solutions modernes de développement web. Construisant des expériences digitales qui génèrent des résultats.",
+    "company": {
+      "title": "Entreprise",
+      "about": "À Propos",
+      "projects": "Projets",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "services": {
+      "title": "Services",
+      "webdev": "Développement Web",
+      "ecommerce": "E-commerce",
+      "custom": "Solutions Personnalisées",
+      "maintenance": "Maintenance"
+    },
+    "legal": {
+      "title": "Légal",
+      "privacy": "Politique de Confidentialité",
+      "terms": "Conditions de Service",
+      "cookies": "Politique des Cookies"
+    },
+    "copyright": "© {year} WebDev Agency. Tous droits réservés.",
+    "made": "Fait avec ❤️ en Belgique 🇧🇪",
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "email": "Email"
+    }
+  },
+  "stats": {
+    "projects": "Projets Terminés",
+    "satisfaction": "Satisfaction Client",
+    "experience": "Années d'Expérience",
+    "years": "Années d'Expérience",
+    "delivered": "Projets Livrés",
+    "rate": "Taux de Satisfaction",
+    "support": "Support 24/7 Disponible"
+  }
+}
+

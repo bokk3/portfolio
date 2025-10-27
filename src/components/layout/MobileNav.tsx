@@ -1,9 +1,10 @@
-// src/components/layout/MobileNav.tsx
 'use client';
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 import { useEffect } from 'react';
+import { useLocale, useTranslations } from 'next-intl';
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 interface MobileNavProps {
   isOpen: boolean;
@@ -12,6 +13,9 @@ interface MobileNavProps {
 }
 
 export function MobileNav({ isOpen, onClose, navigation }: MobileNavProps) {
+  const t = useTranslations('nav');
+  const locale = useLocale();
+
   // Close on escape key
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
@@ -60,22 +64,14 @@ export function MobileNav({ isOpen, onClose, navigation }: MobileNavProps) {
           <div className="pt-6 border-t border-gray-200">
             <p className="text-sm font-medium text-gray-500 mb-3">Language</p>
             <div className="flex space-x-4">
-              <button className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors">
-                English
-              </button>
-              <button className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors">
-                Nederlands
-              </button>
-              <button className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors">
-                Français
-              </button>
+              <LanguageSwitcher />
             </div>
           </div>
 
           {/* CTA Button */}
           <div className="pt-6">
-            <Button href="/contact" className="w-full" onClick={onClose}>
-              Get Started
+            <Button href={`/${locale}/contact`} className="w-full" onClick={onClose}>
+              {t('getStarted')}
             </Button>
           </div>
         </div>

@@ -1,0 +1,165 @@
+{
+  "home": {
+    "hero": {
+      "badge": "Welcome to the future of web development",
+      "title": "Building Digital",
+      "titleHighlight": "Experiences That Scale",
+      "subtitle": "Modern web development solutions for ambitious businesses. From concept to deployment, we build fast, beautiful, and scalable applications.",
+      "ctaPrimary": "Start Your Project",
+      "ctaSecondary": "View Our Work"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive web development solutions tailored to your business needs",
+      "cta": "View All Services",
+      "webdev": {
+        "title": "Web Development",
+        "description": "Custom websites and web applications built with modern frameworks and best practices.",
+        "features": {
+          "0": "React & Next.js",
+          "1": "TypeScript",
+          "2": "Responsive Design"
+        }
+      },
+      "ecommerce": {
+        "title": "E-Commerce Solutions",
+        "description": "Complete online stores with payment integration, inventory management, and analytics.",
+        "features": {
+          "0": "Shopify & WooCommerce",
+          "1": "Payment Gateways",
+          "2": "Product Management"
+        }
+      },
+      "backend": {
+        "title": "Backend Development",
+        "description": "Robust APIs and server-side solutions to power your applications.",
+        "features": {
+          "0": "REST & GraphQL",
+          "1": "Node.js & Python",
+          "2": "Cloud Infrastructure"
+        }
+      },
+      "performance": {
+        "title": "Performance Optimization",
+        "description": "Speed up your site and improve user experience with targeted optimizations.",
+        "features": {
+          "0": "Core Web Vitals",
+          "1": "SEO Optimization",
+          "2": "CDN Integration"
+        }
+      }
+    },
+    "projects": {
+      "title": "Featured Projects",
+      "subtitle": "A showcase of our recent work and successful client collaborations",
+      "cta": "View All Projects",
+      "project1": {
+        "title": "E-Commerce Platform",
+        "description": "Modern online store with payment integration, inventory management, and analytics dashboard.",
+        "tags": {
+          "0": "Next.js",
+          "1": "Stripe",
+          "2": "PostgreSQL"
+        }
+      },
+      "project2": {
+        "title": "SaaS Dashboard",
+        "description": "Feature-rich admin dashboard with real-time data visualization and team collaboration tools.",
+        "tags": {
+          "0": "React",
+          "1": "TypeScript",
+          "2": "Tailwind"
+        }
+      },
+      "project3": {
+        "title": "Portfolio Website",
+        "description": "Stunning portfolio site with smooth animations, case studies, and contact management.",
+        "tags": {
+          "0": "Next.js",
+          "1": "Framer Motion",
+          "2": "CMS"
+        }
+      }
+    },
+    "about": {
+      "title": "Why Choose Us?",
+      "subtitle": "We're not just developers – we're your partners in digital success. With years of experience and a passion for innovation, we deliver solutions that exceed expectations.",
+      "cta": "Let's Work Together",
+      "benefits": [
+        "Modern tech stack with cutting-edge frameworks",
+        "Mobile-first, responsive design approach",
+        "SEO optimized for maximum visibility",
+        "Fast turnaround times without compromising quality",
+        "Ongoing support and maintenance",
+        "Transparent communication throughout"
+      ]
+    },
+    "cta": {
+      "title": "Ready to Start Your Project?",
+      "subtitle": "Let's bring your ideas to life. Get in touch today for a free consultation and quote.",
+      "button1": "Get Started",
+      "button2": "View Portfolio",
+      "trust1": "Fast Response Time",
+      "trust2": "No Obligation Quote",
+      "trust3": "Flexible Pricing"
+    },
+    "contact": {
+      "title": "Get In Touch",
+      "subtitle": "Have a project in mind? We'd love to hear from you.",
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location",
+      "emailValue": "contact@webdev.com",
+      "phoneValue": "+32 123 456 789",
+      "locationValue": "Brussels, Belgium"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact",
+    "getStarted": "Get Started"
+  },
+  "footer": {
+    "description": "Your trusted partner for modern web development solutions. Building digital experiences that drive results.",
+    "company": {
+      "title": "Company",
+      "about": "About",
+      "projects": "Projects",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "services": {
+      "title": "Services",
+      "webdev": "Web Development",
+      "ecommerce": "E-commerce",
+      "custom": "Custom Solutions",
+      "maintenance": "Maintenance"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy"
+    },
+    "copyright": "© {year} WebDev Agency. All rights reserved.",
+    "made": "Made with ❤️ in Belgium 🇧🇪",
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "email": "Email"
+    }
+  },
+  "stats": {
+    "projects": "Projects Completed",
+    "satisfaction": "Client Satisfaction",
+    "experience": "Years Experience",
+    "years": "Years Experience",
+    "delivered": "Projects Delivered",
+    "rate": "Satisfaction Rate",
+    "support": "Support Available"
+  }
+}
+

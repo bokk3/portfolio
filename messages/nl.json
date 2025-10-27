@@ -1,0 +1,165 @@
+{
+  "home": {
+    "hero": {
+      "badge": "Welkom bij de toekomst van webontwikkeling",
+      "title": "Bouwen aan Digitale",
+      "titleHighlight": "Ervaringen Die Schalen",
+      "subtitle": "Moderne webontwikkelingsoplossingen voor ambitieuze bedrijven. Van concept tot implementatie, wij bouwen snelle, mooie en schaalbare applicaties.",
+      "ctaPrimary": "Start Uw Project",
+      "ctaSecondary": "Bekijk Ons Werk"
+    },
+    "services": {
+      "title": "Onze Diensten",
+      "subtitle": "Uitgebreide webontwikkelingsoplossingen op maat van uw bedrijfsbehoeften",
+      "cta": "Alle Diensten Bekijken",
+      "webdev": {
+        "title": "Webontwikkeling",
+        "description": "Aangepaste websites en webapplicaties gebouwd met moderne frameworks en beste praktijken.",
+        "features": {
+          "0": "React & Next.js",
+          "1": "TypeScript",
+          "2": "Responsief Ontwerp"
+        }
+      },
+      "ecommerce": {
+        "title": "E-Commerce Oplossingen",
+        "description": "Volledige online winkels met betalingsintegratie, voorraadbeheer en analytics.",
+        "features": {
+          "0": "Shopify & WooCommerce",
+          "1": "Betalingsgateways",
+          "2": "Productbeheer"
+        }
+      },
+      "backend": {
+        "title": "Backend Ontwikkeling",
+        "description": "Robuuste API's en server-side oplossingen om uw applicaties aan te drijven.",
+        "features": {
+          "0": "REST & GraphQL",
+          "1": "Node.js & Python",
+          "2": "Cloud Infrastructuur"
+        }
+      },
+      "performance": {
+        "title": "Prestatie Optimalisatie",
+        "description": "Versnel uw site en verbeter de gebruikerservaring met gerichte optimalisaties.",
+        "features": {
+          "0": "Core Web Vitals",
+          "1": "SEO Optimalisatie",
+          "2": "CDN Integratie"
+        }
+      }
+    },
+    "projects": {
+      "title": "Uitgelichte Projecten",
+      "subtitle": "Een overzicht van ons recente werk en succesvolle klantensamenwerkingen",
+      "cta": "Alle Projecten Bekijken",
+      "project1": {
+        "title": "E-Commerce Platform",
+        "description": "Moderne online winkel met betalingsintegratie, voorraadbeheer en analytics dashboard.",
+        "tags": {
+          "0": "Next.js",
+          "1": "Stripe",
+          "2": "PostgreSQL"
+        }
+      },
+      "project2": {
+        "title": "SaaS Dashboard",
+        "description": "Functierijk admin dashboard met real-time datavisualisatie en team collaboratietools.",
+        "tags": {
+          "0": "React",
+          "1": "TypeScript",
+          "2": "Tailwind"
+        }
+      },
+      "project3": {
+        "title": "Portfolio Website",
+        "description": "Prachtige portfolio site met vloeiende animaties, case studies en contactbeheer.",
+        "tags": {
+          "0": "Next.js",
+          "1": "Framer Motion",
+          "2": "CMS"
+        }
+      }
+    },
+    "about": {
+      "title": "Waarom Ons Kiezen?",
+      "subtitle": "Wij zijn niet alleen ontwikkelaars – wij zijn uw partners in digitaal succes. Met jarenlange ervaring en een passie voor innovatie leveren wij oplossingen die verwachtingen overtreffen.",
+      "cta": "Laten We Samenwerken",
+      "benefits": [
+        "Moderne tech stack met geavanceerde frameworks",
+        "Mobiel eerst, responsief ontwerpbenaadering",
+        "SEO geoptimaliseerd voor maximale zichtbaarheid",
+        "Snelle doorlooptijden zonder kwaliteitscompromissen",
+        "Doorlopende ondersteuning en onderhoud",
+        "Transparante communicatie doorlopend"
+      ]
+    },
+    "cta": {
+      "title": "Klaar om Uw Project te Starten?",
+      "subtitle": "Laten we uw ideeën tot leven brengen. Neem vandaag contact op voor een gratis consultatie en offerte.",
+      "button1": "Aan de Slag",
+      "button2": "Portfolio Bekijken",
+      "trust1": "Snelle Reactietijd",
+      "trust2": "Geen Verplichte Offerte",
+      "trust3": "Flexibele Prijzen"
+    },
+    "contact": {
+      "title": "Neem Contact Op",
+      "subtitle": "Heeft u een project in gedachten? We horen graag van u.",
+      "email": "E-mail",
+      "phone": "Telefoon",
+      "location": "Locatie",
+      "emailValue": "contact@webdev.com",
+      "phoneValue": "+32 123 456 789",
+      "locationValue": "Brussel, België"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projecten",
+    "blog": "Blog",
+    "contact": "Contact",
+    "getStarted": "Aan de Slag"
+  },
+  "footer": {
+    "description": "Uw betrouwbare partner voor moderne webontwikkelingsoplossingen. Het bouwen van digitale ervaringen die resultaten opleveren.",
+    "company": {
+      "title": "Bedrijf",
+      "about": "Over Ons",
+      "projects": "Projecten",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "services": {
+      "title": "Diensten",
+      "webdev": "Webontwikkeling",
+      "ecommerce": "E-commerce",
+      "custom": "Aangepaste Oplossingen",
+      "maintenance": "Onderhoud"
+    },
+    "legal": {
+      "title": "Juridisch",
+      "privacy": "Privacybeleid",
+      "terms": "Servicevoorwaarden",
+      "cookies": "Cookiebeleid"
+    },
+    "copyright": "© {year} WebDev Agency. Alle rechten voorbehouden.",
+    "made": "Gemaakt met ❤️ in België 🇧🇪",
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "email": "E-mail"
+    }
+  },
+  "stats": {
+    "projects": "Projecten Voltooid",
+    "satisfaction": "Klanttevredenheid",
+    "experience": "Jaren Ervaring",
+    "years": "Jaren Ervaring",
+    "delivered": "Projecten Afgeleverd",
+    "rate": "Tevredenheidspercentage",
+    "support": "Ondersteuning Beschikbaar"
+  }
+}
+
