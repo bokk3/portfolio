@@ -1,98 +1,78 @@
-// src/components/sections/FeaturedProjects.tsx
+// src/components/sections/Services.tsx
 import { Section } from '@/components/ui/Section';
 import { Button } from '@/components/ui/Button';
-import { ArrowRight, ExternalLink } from 'lucide-react';
-import Image from 'next/image';
+import { Code2, Smartphone, Database, Zap } from 'lucide-react';
 
-const projects = [
+const services = [
   {
-    title: 'E-Commerce Platform',
-    description: 'Modern online store with payment integration, inventory management, and analytics dashboard.',
-    image: 'https://images.unsplash.com/photo-1661956602116-aa6865609028?w=800&h=600&fit=crop',
-    tags: ['Next.js', 'Stripe', 'PostgreSQL'],
-    link: '/projects/ecommerce',
+    icon: Code2,
+    title: 'Web Development',
+    description: 'Custom websites and web applications built with modern frameworks and best practices.',
+    features: ['React & Next.js', 'TypeScript', 'Responsive Design'],
   },
   {
-    title: 'SaaS Dashboard',
-    description: 'Feature-rich admin dashboard with real-time data visualization and team collaboration tools.',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop',
-    tags: ['React', 'TypeScript', 'Tailwind'],
-    link: '/projects/saas-dashboard',
+    icon: Smartphone,
+    title: 'E-Commerce Solutions',
+    description: 'Complete online stores with payment integration, inventory management, and analytics.',
+    features: ['Shopify & WooCommerce', 'Payment Gateways', 'Product Management'],
   },
   {
-    title: 'Portfolio Website',
-    description: 'Stunning portfolio site with smooth animations, case studies, and contact management.',
-    image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop',
-    tags: ['Next.js', 'Framer Motion', 'CMS'],
-    link: '/projects/portfolio',
+    icon: Database,
+    title: 'Backend Development',
+    description: 'Robust APIs and server-side solutions to power your applications.',
+    features: ['REST & GraphQL', 'Node.js & Python', 'Cloud Infrastructure'],
+  },
+  {
+    icon: Zap,
+    title: 'Performance Optimization',
+    description: 'Speed up your site and improve user experience with targeted optimizations.',
+    features: ['Core Web Vitals', 'SEO Optimization', 'CDN Integration'],
   },
 ];
 
-export function FeaturedProjects() {
+export function Services() {
   return (
-    <Section id="projects" className="bg-gray-50">
+    <Section id="services" className="bg-white">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          Featured Projects
+          Our Services
         </h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          A showcase of our recent work and successful client collaborations
+          Comprehensive web development solutions tailored to your business needs
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-        {projects.map((project, index) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {services.map((service) => (
           <div
-            key={project.title}
-            className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+            key={service.title}
+            className="group p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-blue-200"
           >
-            {/* Project Image */}
-            <div className="relative h-48 overflow-hidden">
-              <Image
-                src={project.image}
-                alt={project.title}
-                fill
-                className="object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              <a
-                href={project.link}
-                className="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
-              >
-                <ExternalLink className="w-5 h-5 text-gray-900" />
-              </a>
+            <div className="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
+              <service.icon className="w-7 h-7 text-blue-600 group-hover:text-white transition-colors" />
             </div>
-
-            {/* Project Info */}
-            <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                {project.title}
-              </h3>
-              <p className="text-gray-600 mb-4">
-                {project.description}
-              </p>
-
-              {/* Tags */}
-              <div className="flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              {service.title}
+            </h3>
+            <p className="text-gray-600 mb-4">
+              {service.description}
+            </p>
+            <ul className="space-y-2">
+              {service.features.map((feature) => (
+                <li key={feature} className="flex items-center text-sm text-gray-600">
+                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2" />
+                  {feature}
+                </li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>
 
-      {/* View All CTA */}
-      <div className="text-center">
-        <Button href="/projects" variant="outline" size="lg" className="group">
-          View All Projects
-          <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+      {/* CTA */}
+      <div className="mt-12 text-center">
+        <Button href="/services" variant="outline" size="lg">
+          View All Services
         </Button>
       </div>
     </Section>
