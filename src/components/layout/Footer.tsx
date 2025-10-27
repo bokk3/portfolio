@@ -1,0 +1,135 @@
+// src/components/layout/Footer.tsx
+import Link from 'next/link';
+import { Container } from '@/components/ui/Container';
+import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+
+const footerLinks = {
+  company: [
+    { name: 'About', href: '/about' },
+    { name: 'Projects', href: '/projects' },
+    { name: 'Blog', href: '/blog' },
+    { name: 'Contact', href: '/contact' },
+  ],
+  services: [
+    { name: 'Web Development', href: '/services/web-development' },
+    { name: 'E-commerce', href: '/services/ecommerce' },
+    { name: 'Custom Solutions', href: '/services/custom' },
+    { name: 'Maintenance', href: '/services/maintenance' },
+  ],
+  legal: [
+    { name: 'Privacy Policy', href: '/privacy' },
+    { name: 'Terms of Service', href: '/terms' },
+    { name: 'Cookie Policy', href: '/cookies' },
+  ],
+};
+
+const socialLinks = [
+  { name: 'GitHub', href: '#', icon: Github },
+  { name: 'LinkedIn', href: '#', icon: Linkedin },
+  { name: 'Twitter', href: '#', icon: Twitter },
+  { name: 'Email', href: 'mailto:contact@example.com', icon: Mail },
+];
+
+export function Footer() {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-gray-900 text-gray-300">
+      <Container>
+        {/* Main Footer Content */}
+        <div className="py-12 md:py-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+            {/* Brand Column */}
+            <div className="lg:col-span-2">
+              <Link href="/" className="flex items-center space-x-2 mb-4">
+                <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-xl">W</span>
+                </div>
+                <span className="font-bold text-xl text-white">WebDev</span>
+              </Link>
+              <p className="text-gray-400 mb-6 max-w-sm">
+                Your trusted partner for modern web development solutions. 
+                Building digital experiences that drive results.
+              </p>
+              <div className="flex space-x-4">
+                {socialLinks.map((social) => (
+                  <a
+                    key={social.name}
+                    href={social.href}
+                    className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors"
+                    aria-label={social.name}
+                  >
+                    <social.icon className="w-5 h-5" />
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* Company Links */}
+            <div>
+              <h3 className="font-semibold text-white mb-4">Company</h3>
+              <ul className="space-y-3">
+                {footerLinks.company.map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      href={link.href}
+                      className="hover:text-blue-400 transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Services Links */}
+            <div>
+              <h3 className="font-semibold text-white mb-4">Services</h3>
+              <ul className="space-y-3">
+                {footerLinks.services.map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      href={link.href}
+                      className="hover:text-blue-400 transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Legal Links */}
+            <div>
+              <h3 className="font-semibold text-white mb-4">Legal</h3>
+              <ul className="space-y-3">
+                {footerLinks.legal.map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      href={link.href}
+                      className="hover:text-blue-400 transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="border-t border-gray-800 py-6">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-sm text-gray-400">
+              © {currentYear} WebDev Agency. All rights reserved.
+            </p>
+            <p className="text-sm text-gray-400">
+              Made with ❤️ in Belgium 🇧🇪
+            </p>
+          </div>
+        </div>
+      </Container>
+    </footer>
+  );
+}
