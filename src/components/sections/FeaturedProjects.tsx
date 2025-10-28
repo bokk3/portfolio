@@ -38,12 +38,12 @@ export function FeaturedProjects() {
   ];
 
   return (
-    <Section id="projects" className="bg-gray-50">
+    <Section id="projects" className="bg-gray-50 dark:bg-gray-800">
       <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
           {t('title')}
         </h2>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
           {t('subtitle')}
         </p>
       </div>
@@ -52,7 +52,7 @@ export function FeaturedProjects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+            className="group bg-white dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl dark:hover:shadow-gray-900/20 transition-all duration-300"
           >
             {/* Project Image */}
             <div className="relative h-48 overflow-hidden">
@@ -73,10 +73,10 @@ export function FeaturedProjects() {
 
             {/* Project Info */}
             <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 {project.title}
               </h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
                 {project.description}
               </p>
 
@@ -85,7 +85,7 @@ export function FeaturedProjects() {
                 {project.tags.map((tag, idx) => (
                   <span
                     key={idx}
-                    className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full"
+                    className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-sm rounded-full"
                   >
                     {tag}
                   </span>

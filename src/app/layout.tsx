@@ -12,9 +12,23 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                const theme = localStorage.getItem('portfolio-theme') || 'light';
+                document.documentElement.classList.add(theme);
+              } catch (e) {
+                document.documentElement.classList.add('light');
+              }
+            `,
+          }}
+        />
+      </head>
       <body className={inter.className + ' scroll-smooth'}>
         <ThemeProvider
-          defaultTheme="system"
+          defaultTheme="light"
           storageKey="portfolio-theme"
         >
           {children}

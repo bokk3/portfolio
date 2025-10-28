@@ -11,14 +11,14 @@ export function AboutPreview() {
   const locale = useLocale();
 
   return (
-    <Section id="about" className="bg-white">
+    <Section id="about" className="bg-white dark:bg-gray-900">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left - Content */}
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
             {t('title')}
           </h2>
-          <p className="text-lg text-gray-600 mb-8">
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
             {t('subtitle')}
           </p>
 
@@ -27,7 +27,7 @@ export function AboutPreview() {
             {[0, 1, 2, 3, 4, 5].map((index) => (
               <div key={index} className="flex items-start space-x-3">
                 <CheckCircle2 className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-700">{t.raw('benefits')[index]}</span>
+                <span className="text-gray-700 dark:text-gray-300">{t.raw('benefits')[index]}</span>
               </div>
             ))}
           </div>

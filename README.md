@@ -1,74 +1,74 @@
-# 🚀 Web Development Agency Portfolio
+# 🌐 Multilingual Web Agency Portfolio
 
-A modern, multilingual portfolio and business website built with Next.js 15, TypeScript, and Tailwind CSS. Showcasing web development projects and services with a professional blog and contact system.
-
-[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-38bdf8?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
-[![Prisma](https://img.shields.io/badge/Prisma-5-2D3748?style=for-the-badge&logo=prisma)](https://www.prisma.io/)
+A modern, responsive web agency portfolio built with Next.js 16, featuring internationalization (i18n) and dark mode support.
 
 ## ✨ Features
 
-- 🌍 **Multilingual** - Full support for English, Dutch (NL), and French (FR)
-- 🎨 **Modern UI** - Responsive design with Tailwind CSS
-- 📱 **Mobile-First** - Hamburger menu and optimized mobile experience
-- 🔐 **Authentication** - Secure admin dashboard with Better Auth
-- 📝 **Blog System** - Full-featured blog with categories and tags
-- 💼 **Portfolio** - Showcase projects with detailed case studies
-- 📬 **Contact System** - Lead management and inquiry tracking
-- 🎯 **SEO Optimized** - Meta tags, structured data, and sitemap
-- ⚡ **Performance** - Server-side rendering and optimized images
-- 🗄️ **Type-Safe Database** - PostgreSQL with Prisma ORM
+- 🌍 **Multilingual Support** - English, French, Dutch with next-intl
+- 🌙 **Dark/Light Mode** - Smooth theme switching with persistence
+- 📱 **Fully Responsive** - Mobile-first design approach
+- ⚡ **Next.js 16** - Latest features with Turbopack
+- 🎨 **Tailwind CSS** - Modern styling with dark mode variants
+- 🔧 **TypeScript** - Type-safe development
+- 🚀 **Performance Optimized** - Fast loading and smooth animations
 
-## 🛠️ Tech Stack
+## 🚀 Quick Start
 
-### Core
-- **Framework:** Next.js 15 (App Router)
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS
-- **Database:** PostgreSQL (Prisma Postgres)
-- **ORM:** Prisma
+```bash
+# Install dependencies
+npm install
 
-### Features
-- **Authentication:** Better Auth
-- **Internationalization:** next-intl
-- **Forms:** React Hook Form + Zod
-- **UI Components:** shadcn/ui (planned)
-- **Icons:** Lucide React
+# Start development server
+npm run dev
 
-### Development
-- **Package Manager:** npm
-- **Code Quality:** ESLint
-- **Dev Server:** Turbopack
+# Build for production
+npm run build
 
-## 📋 Progress Tracker
+# Start production server
+npm start
+```
 
-### Phase 1: Foundation ✅
-- [x] Next.js project setup
-- [x] TypeScript configuration
-- [x] Tailwind CSS integration
-- [x] Database schema design
-- [x] Prisma setup and migration
-- [x] Project structure
+Visit `http://localhost:3000` to see your site!
 
-### Phase 2: Core Features 🚧
-- [ ] Navigation component (desktop & mobile)
-- [ ] Footer component
-- [ ] Landing page with hero section
-- [ ] Internationalization setup (EN/NL/FR)
-- [ ] Language toggle component
-- [ ] Better Auth integration
-- [ ] Protected admin routes
+## 🌍 Language Support
 
-### Phase 3: Content Pages 📋
-- [ ] Projects overview page
-- [ ] Project detail pages
-- [ ] Blog listing page
-- [ ] Blog post pages
-- [ ] Contact page with form
-- [ ] About/Services section
+- **English** (`/en`) - Default language
+- **French** (`/fr`) - Français
+- **Dutch** (`/nl`) - Nederlands
 
-### Phase 4: Admin Dashboard 📋
+### Adding New Languages
+
+1. Create a new message file: `src/messages/[locale].json`
+2. Add the locale to `src/i18n.ts`:
+   ```typescript
+   export const locales = ['en', 'nl', 'fr', 'de'] as const; // Add 'de' for German
+   ```
+3. Update the language switcher in `src/components/layout/Header.tsx`
+
+## 🎨 Theme System
+
+The site supports both light and dark modes:
+- Toggle using the moon/sun button in the header
+- Automatically detects system preference
+- Saves user preference in localStorage
+- Smooth transitions between themes
+
+## 📁 Project Structure
+
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── [locale]/          # Internationalized routes
+│   ├── globals.css        # Global styles
+│   └── layout.tsx         # Root layout
+├── components/            # React components
+│   ├── layout/           # Header, Footer, Navigation
+│   ├── sections/         # Page sections (Hero, Services, etc.)
+│   ├── ui/               # Reusable UI components
+│   └── providers/        # Context providers
+├── messages/             # Translation files
+│   ├── en.json          # English translations
+│   ├── fr.json          # French translation
 - [ ] Admin layout
 - [ ] Project management (CRUD)
 - [ ] Blog management (CRUD)

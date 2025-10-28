@@ -30,12 +30,12 @@ export function ContactPreview() {
   ];
 
   return (
-    <Section id="contact" className="bg-gray-50">
+    <Section id="contact" className="bg-gray-50 dark:bg-gray-800">
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
           {t('title')}
         </h2>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
           {t('subtitle')}
         </p>
       </div>
@@ -45,15 +45,15 @@ export function ContactPreview() {
           <a
             key={index}
             href={info.href}
-            className="group flex flex-col items-center text-center p-8 bg-white rounded-2xl hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-blue-500"
+            className="group flex flex-col items-center text-center p-8 bg-white dark:bg-gray-700 rounded-2xl hover:shadow-lg dark:hover:shadow-gray-900/20 transition-all duration-300 border border-gray-200 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400"
           >
-            <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
-              <info.icon className="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" />
+            <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
+              <info.icon className="w-8 h-8 text-blue-600 dark:text-blue-400 group-hover:text-white transition-colors" />
             </div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
               {info.label}
             </h3>
-            <p className="text-gray-600 group-hover:text-blue-600 transition-colors">
+            <p className="text-gray-600 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
               {info.value}
             </p>
           </a>

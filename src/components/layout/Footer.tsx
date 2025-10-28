@@ -11,7 +11,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-gray-900 dark:bg-black text-gray-300 dark:text-gray-400">
       <Container>
         {/* Main Footer Content */}
         <div className="py-12 md:py-16">
@@ -22,9 +22,9 @@ export function Footer() {
                 <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold text-xl">W</span>
                 </div>
-                <span className="font-bold text-xl text-white">WebDev</span>
+                <span className="font-bold text-xl text-white dark:text-gray-100">WebDev</span>
               </Link>
-              <p className="text-gray-400 mb-6 max-w-sm">
+              <p className="text-gray-400 dark:text-gray-500 mb-6 max-w-sm">
                 {t('description')}
               </p>
               <div className="flex space-x-4">
@@ -37,7 +37,7 @@ export function Footer() {
                   <a
                     key={social.name}
                     href={social.href}
-                    className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors"
+                    className="w-10 h-10 bg-gray-800 dark:bg-gray-700 hover:bg-blue-600 dark:hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors"
                     aria-label={t.raw('social')[social.name]}
                   >
                     <social.icon className="w-5 h-5" />
@@ -48,13 +48,13 @@ export function Footer() {
 
             {/* Company Links */}
             <div>
-              <h3 className="font-semibold text-white mb-4">{t.raw('company').title}</h3>
+              <h3 className="font-semibold text-white dark:text-gray-200 mb-4">{t.raw('company').title}</h3>
               <ul className="space-y-3">
                 {['about', 'projects', 'blog', 'contact'].map((link) => (
                   <li key={link}>
                     <Link
                       href={`/${locale}/${link === 'about' ? 'about' : link}`}
-                      className="hover:text-blue-400 transition-colors"
+                      className="hover:text-blue-400 dark:hover:text-blue-300 transition-colors"
                     >
                       {t.raw('company')[link]}
                     </Link>
@@ -65,13 +65,13 @@ export function Footer() {
 
             {/* Services Links */}
             <div>
-              <h3 className="font-semibold text-white mb-4">{t.raw('services').title}</h3>
+              <h3 className="font-semibold text-white dark:text-gray-200 mb-4">{t.raw('services').title}</h3>
               <ul className="space-y-3">
                 {['webdev', 'ecommerce', 'custom', 'maintenance'].map((link) => (
                   <li key={link}>
                     <Link
                       href={`/${locale}/services/${link === 'webdev' ? 'web-development' : link}`}
-                      className="hover:text-blue-400 transition-colors"
+                      className="hover:text-blue-400 dark:hover:text-blue-300 transition-colors"
                     >
                       {t.raw('services')[link]}
                     </Link>
@@ -82,13 +82,13 @@ export function Footer() {
 
             {/* Legal Links */}
             <div>
-              <h3 className="font-semibold text-white mb-4">{t.raw('legal').title}</h3>
+              <h3 className="font-semibold text-white dark:text-gray-200 mb-4">{t.raw('legal').title}</h3>
               <ul className="space-y-3">
                 {['privacy', 'terms', 'cookies'].map((link) => (
                   <li key={link}>
                     <Link
                       href={`/${locale}/${link === 'privacy' ? 'privacy' : link === 'terms' ? 'terms' : 'cookies'}`}
-                      className="hover:text-blue-400 transition-colors"
+                      className="hover:text-blue-400 dark:hover:text-blue-300 transition-colors"
                     >
                       {t.raw('legal')[link]}
                     </Link>
@@ -100,12 +100,12 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 py-6">
+        <div className="border-t border-gray-800 dark:border-gray-700 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-400 dark:text-gray-500">
               {t('copyright', { year: currentYear })}
             </p>
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-400 dark:text-gray-500">
               {t('made')}
             </p>
           </div>
