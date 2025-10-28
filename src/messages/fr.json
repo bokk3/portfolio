@@ -116,6 +116,7 @@
   },
   "nav": {
     "home": "Accueil",
+    "services": "Services",
     "projects": "Projets",
     "blog": "Blog",
     "contact": "Contact",
@@ -169,7 +170,12 @@
     "hero": {
       "badge": "Travaillons Ensemble",
       "title": "Contactez-Nous",
-      "subtitle": "Prêt à démarrer votre projet ? Nous aimerions avoir de vos nouvelles. Envoyez-nous un message et nous répondrons dès que possible."
+      "subtitle": "Prêt à démarrer votre projet ? Nous aimerions avoir de vos nouvelles. Envoyez-nous un message et nous répondrons dès que possible.",
+      "whyChoose": "Pourquoi Nous Choisir?",
+      "happyClients": "Clients Satisfaits",
+      "successRate": "Taux de Réussite",
+      "responseTime": "Réponse sous 2 heures",
+      "location": "Basé à Louvain, Belgique"
     },
     "form": {
       "title": "Envoyez-nous un message",
@@ -232,7 +238,7 @@
     },
     "map": {
       "title": "Trouvez-Nous",
-      "subtitle": "Situés au cœur de Bruxelles, nous sommes facilement accessibles en transport public et en voiture.",
+      "subtitle": "Situés à Louvain, Belgique, nous sommes facilement accessibles en transport public et en voiture.",
       "placeholder": "Carte Interactive",
       "locationInfo": {
         "title": "Détails de l'Emplacement",
@@ -249,6 +255,215 @@
         "description": "Nous aimerions vous rencontrer en personne ! Planifiez une visite à notre bureau.",
         "schedule": "Planifier une visite"
       }
+    }
+  },
+  "services": {
+    "hero": {
+      "badge": "Nos Services",
+      "title": "Solutions de Développement",
+      "titleHighlight": "Web Complètes",
+      "subtitle": "Du concept au déploiement, nous fournissons des services de développement web de bout en bout adaptés à vos besoins commerciaux.",
+      "services": {
+        "webdev": "Développement Web",
+        "ecommerce": "E-Commerce",
+        "backend": "APIs Backend",
+        "performance": "Optimisation"
+      }
+    },
+    "webdev": {
+      "title": "Développement Web",
+      "description": "Sites web et applications web personnalisés construits avec des frameworks modernes et les meilleures pratiques.",
+      "features": {
+        "0": "Développement React & Next.js",
+        "1": "Intégration TypeScript",
+        "2": "Design Responsive Mobile-First",
+        "3": "Applications Web Progressives (PWA)",
+        "4": "Optimisation SEO"
+      }
+    },
+    "ecommerce": {
+      "title": "Solutions E-Commerce",
+      "description": "Boutiques en ligne complètes avec intégration de paiement, gestion d'inventaire et analytics.",
+      "features": {
+        "0": "Configuration Shopify & WooCommerce",
+        "1": "Intégration Passerelles de Paiement",
+        "2": "Systèmes de Gestion de Produits",
+        "3": "Traitement des Commandes",
+        "4": "Analytics & Rapports"
+      }
+    },
+    "backend": {
+      "title": "Développement Backend",
+      "description": "APIs robustes et solutions côté serveur pour alimenter vos applications avec une architecture évolutive.",
+      "features": {
+        "0": "APIs REST & GraphQL",
+        "1": "Développement Node.js & Python",
+        "2": "Conception & Gestion de Base de Données",
+        "3": "Configuration Infrastructure Cloud",
+        "4": "Authentification & Sécurité"
+      }
+    },
+    "performance": {
+      "title": "Optimisation des Performances",
+      "description": "Accélérez votre site web et améliorez l'expérience utilisateur avec des optimisations ciblées.",
+      "features": {
+        "0": "Optimisation Core Web Vitals",
+        "1": "Audits SEO & Techniques",
+        "2": "Intégration CDN & Mise en Cache",
+        "3": "Optimisation Images & Assets",
+        "4": "Surveillance des Performances"
+      }
+    },
+    "grid": {
+      "features": "Ce qui est Inclus",
+      "technologies": "Technologies",
+      "getStarted": "Commencer"
+    },
+    "process": {
+      "title": "Notre Processus de Développement",
+      "subtitle": "Une méthodologie éprouvée qui garantit la livraison réussie de projets du début à la fin.",
+      "consultation": {
+        "title": "Consultation",
+        "description": "Nous commençons par comprendre vos objectifs commerciaux, votre public cible et vos exigences techniques."
+      },
+      "planning": {
+        "title": "Planification & Design",
+        "description": "Planification détaillée du projet, wireframing et maquettes de design pour visualiser votre projet."
+      },
+      "development": {
+        "title": "Développement",
+        "description": "Processus de développement agile avec mises à jour régulières, tests et assurance qualité."
+      },
+      "launch": {
+        "title": "Lancement & Support",
+        "description": "Déploiement fluide en production avec support continu, maintenance et optimisation."
+      }
+    },
+    "pricing": {
+      "title": "Tarification Transparente",
+      "subtitle": "Choisissez le forfait qui correspond à vos besoins. Tous les plans incluent notre engagement envers la qualité.",
+      "popular": "Le Plus Populaire",
+      "starter": {
+        "name": "Starter",
+        "description": "Parfait pour les petites entreprises et projets personnels",
+        "price": "€2.500",
+        "period": "/projet",
+        "features": {
+          "0": "Site web responsive de 5 pages",
+          "1": "Design mobile-first",
+          "2": "Optimisation SEO de base",
+          "3": "Intégration formulaire de contact",
+          "4": "3 mois de support"
+        }
+      },
+      "professional": {
+        "name": "Professionnel",
+        "description": "Idéal pour les entreprises en croissance et e-commerce",
+        "price": "€5.000",
+        "period": "/projet",
+        "features": {
+          "0": "Application web personnalisée",
+          "1": "Fonctionnalité e-commerce",
+          "2": "SEO & analytics avancés",
+          "3": "Intégration de paiement",
+          "4": "Intégration CMS",
+          "5": "6 mois de support"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "Pour les applications à grande échelle et exigences complexes",
+        "price": "Sur Mesure",
+        "period": "/devis",
+        "features": {
+          "0": "Architecture évolutive",
+          "1": "Développement backend personnalisé",
+          "2": "Intégrations tierces",
+          "3": "Fonctionnalités de sécurité avancées",
+          "4": "Optimisation des performances",
+          "5": "12 mois de support"
+        }
+      },
+      "getStarted": "Commencer"
+    },
+    "testimonials": {
+      "title": "Ce Que Disent Nos Clients",
+      "subtitle": "Ne nous croyez pas sur parole. Voici ce que nos clients satisfaits disent de nos services.",
+      "testimonial1": {
+        "name": "Sarah Johnson",
+        "role": "Directrice Marketing",
+        "company": "TechStart Inc",
+        "content": "L'équipe a livré une plateforme e-commerce exceptionnelle qui a dépassé nos attentes. Nos ventes en ligne ont augmenté de 150%."
+      },
+      "testimonial2": {
+        "name": "Michael Chen",
+        "role": "PDG",
+        "company": "Digital Solutions",
+        "content": "Professionnel, fiable et incroyablement compétent. Ils ont transformé notre site web obsolète en une plateforme moderne."
+      },
+      "testimonial3": {
+        "name": "Emma Rodriguez",
+        "role": "Fondatrice",
+        "company": "Creative Studio",
+        "content": "Communication exceptionnelle et expertise technique. L'application web personnalisée a rationalisé tout notre processus commercial."
+      }
+    },
+    "cta": {
+      "title": "Prêt à Démarrer Votre Projet?",
+      "subtitle": "Discutons de vos exigences et créons quelque chose d'incroyable ensemble. Contactez-nous pour une consultation gratuite.",
+      "primary": "Démarrer Votre Projet",
+      "secondary": "Voir Notre Travail",
+      "stats": {
+        "response": "24h",
+        "responseLabel": "Temps de Réponse",
+        "projects": "50+",
+        "projectsLabel": "Projets Livrés",
+        "satisfaction": "98%",
+        "satisfactionLabel": "Satisfaction Client"
+      }
+    }
+  },
+  "projects": {
+    "hero": {
+      "badge": "Notre Travail",
+      "title": "Projets Qui Font",
+      "titleHighlight": "Impact",
+      "subtitle": "Explorez notre portfolio de projets réussis. Des startups aux solutions d'entreprise, nous avons aidé les entreprises à transformer leurs idées en expériences numériques puissantes.",
+      "stats": {
+        "delivered": "Projets Livrés",
+        "clients": "Clients Satisfaits",
+        "success": "Taux de Réussite",
+        "experience": "Années d'Expérience"
+      }
+    },
+    "filter": {
+      "all": "Tous les Projets",
+      "category": "Catégorie",
+      "technology": "Technologie",
+      "clear": "Effacer les Filtres"
+    },
+    "categories": {
+      "all": "Tous",
+      "ecommerce": "E-Commerce",
+      "saas": "SaaS",
+      "portfolio": "Portfolio",
+      "webapp": "App Web",
+      "mobile": "Mobile"
+    },
+    "technologies": {
+      "all": "Tous",
+      "react": "React",
+      "nextjs": "Next.js",
+      "typescript": "TypeScript",
+      "nodejs": "Node.js",
+      "python": "Python"
+    },
+    "stats": {
+      "title": "Statistiques des Projets",
+      "totalProjects": "Total des Projets",
+      "activeClients": "Clients Actifs",
+      "completionRate": "Taux de Completion",
+      "avgRating": "Note Moyenne"
     }
   },
   "cookies": {

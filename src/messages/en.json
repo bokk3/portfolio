@@ -116,6 +116,7 @@
   },
   "nav": {
     "home": "Home",
+    "services": "Services",
     "projects": "Projects",
     "blog": "Blog",
     "contact": "Contact",
@@ -169,7 +170,12 @@
     "hero": {
       "badge": "Let's Work Together",
       "title": "Get In Touch",
-      "subtitle": "Ready to start your project? We'd love to hear from you. Send us a message and we'll respond as soon as possible."
+      "subtitle": "Ready to start your project? We'd love to hear from you. Send us a message and we'll respond as soon as possible.",
+      "whyChoose": "Why Choose Us?",
+      "happyClients": "Happy Clients",
+      "successRate": "Success Rate",
+      "responseTime": "Response within 2 hours",
+      "location": "Based in Leuven, Belgium"
     },
     "form": {
       "title": "Send us a message",
@@ -232,7 +238,7 @@
     },
     "map": {
       "title": "Find Us",
-      "subtitle": "Located in the heart of Brussels, we're easily accessible by public transport and car.",
+      "subtitle": "Located in Leuven, Belgium, we're easily accessible by public transport and car.",
       "placeholder": "Interactive Map",
       "locationInfo": {
         "title": "Location Details",
@@ -376,6 +382,215 @@
         "title": "Policy Updates",
         "content": "We may update this cookie policy from time to time. Please check this page regularly for any changes."
       }
+    }
+  },
+  "services": {
+    "hero": {
+      "badge": "Our Services",
+      "title": "Comprehensive Web",
+      "titleHighlight": "Development Solutions",
+      "subtitle": "From concept to deployment, we provide end-to-end web development services tailored to your business needs and goals.",
+      "services": {
+        "webdev": "Web Development",
+        "ecommerce": "E-Commerce",
+        "backend": "Backend APIs",
+        "performance": "Optimization"
+      }
+    },
+    "webdev": {
+      "title": "Web Development",
+      "description": "Custom websites and web applications built with modern frameworks, responsive design, and best practices for optimal performance and user experience.",
+      "features": {
+        "0": "React & Next.js Development",
+        "1": "TypeScript Integration",
+        "2": "Responsive Mobile-First Design",
+        "3": "Progressive Web Apps (PWA)",
+        "4": "SEO Optimization"
+      }
+    },
+    "ecommerce": {
+      "title": "E-Commerce Solutions",
+      "description": "Complete online stores with payment integration, inventory management, analytics, and everything you need to sell online successfully.",
+      "features": {
+        "0": "Shopify & WooCommerce Setup",
+        "1": "Payment Gateway Integration",
+        "2": "Product Management Systems",
+        "3": "Order Processing & Fulfillment",
+        "4": "Analytics & Reporting"
+      }
+    },
+    "backend": {
+      "title": "Backend Development",
+      "description": "Robust APIs and server-side solutions to power your applications with scalable architecture and secure data management.",
+      "features": {
+        "0": "REST & GraphQL APIs",
+        "1": "Node.js & Python Development",
+        "2": "Database Design & Management",
+        "3": "Cloud Infrastructure Setup",
+        "4": "Authentication & Security"
+      }
+    },
+    "performance": {
+      "title": "Performance Optimization",
+      "description": "Speed up your website and improve user experience with targeted optimizations, monitoring, and best practices implementation.",
+      "features": {
+        "0": "Core Web Vitals Optimization",
+        "1": "SEO & Technical Audits",
+        "2": "CDN Integration & Caching",
+        "3": "Image & Asset Optimization",
+        "4": "Performance Monitoring"
+      }
+    },
+    "grid": {
+      "features": "What's Included",
+      "technologies": "Technologies",
+      "getStarted": "Get Started"
+    },
+    "process": {
+      "title": "Our Development Process",
+      "subtitle": "A proven methodology that ensures successful project delivery from start to finish.",
+      "consultation": {
+        "title": "Consultation",
+        "description": "We start by understanding your business goals, target audience, and technical requirements to create the perfect solution."
+      },
+      "planning": {
+        "title": "Planning & Design",
+        "description": "Detailed project planning, wireframing, and design mockups to visualize your project before development begins."
+      },
+      "development": {
+        "title": "Development",
+        "description": "Agile development process with regular updates, testing, and quality assurance to ensure everything works perfectly."
+      },
+      "launch": {
+        "title": "Launch & Support",
+        "description": "Smooth deployment to production with ongoing support, maintenance, and optimization for continued success."
+      }
+    },
+    "pricing": {
+      "title": "Transparent Pricing",
+      "subtitle": "Choose the package that fits your needs. All plans include our commitment to quality and ongoing support.",
+      "popular": "Most Popular",
+      "starter": {
+        "name": "Starter",
+        "description": "Perfect for small businesses and personal projects",
+        "price": "€2,500",
+        "period": "/project",
+        "features": {
+          "0": "5-page responsive website",
+          "1": "Mobile-first design",
+          "2": "Basic SEO optimization",
+          "3": "Contact form integration",
+          "4": "3 months support"
+        }
+      },
+      "professional": {
+        "name": "Professional",
+        "description": "Ideal for growing businesses and e-commerce",
+        "price": "€5,000",
+        "period": "/project",
+        "features": {
+          "0": "Custom web application",
+          "1": "E-commerce functionality",
+          "2": "Advanced SEO & analytics",
+          "3": "Payment integration",
+          "4": "CMS integration",
+          "5": "6 months support"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "For large-scale applications and complex requirements",
+        "price": "Custom",
+        "period": "/quote",
+        "features": {
+          "0": "Scalable architecture",
+          "1": "Custom backend development",
+          "2": "Third-party integrations",
+          "3": "Advanced security features",
+          "4": "Performance optimization",
+          "5": "12 months support"
+        }
+      },
+      "getStarted": "Get Started"
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "subtitle": "Don't just take our word for it. Here's what our satisfied clients have to say about our services.",
+      "testimonial1": {
+        "name": "Sarah Johnson",
+        "role": "Marketing Director",
+        "company": "TechStart Inc",
+        "content": "The team delivered an exceptional e-commerce platform that exceeded our expectations. Our online sales increased by 150% within the first quarter."
+      },
+      "testimonial2": {
+        "name": "Michael Chen",
+        "role": "CEO",
+        "company": "Digital Solutions",
+        "content": "Professional, reliable, and incredibly skilled. They transformed our outdated website into a modern, fast, and user-friendly platform."
+      },
+      "testimonial3": {
+        "name": "Emma Rodriguez",
+        "role": "Founder",
+        "company": "Creative Studio",
+        "content": "Outstanding communication and technical expertise. The custom web application they built has streamlined our entire business process."
+      }
+    },
+    "cta": {
+      "title": "Ready to Start Your Project?",
+      "subtitle": "Let's discuss your requirements and create something amazing together. Get in touch for a free consultation.",
+      "primary": "Start Your Project",
+      "secondary": "View Our Work",
+      "stats": {
+        "response": "24h",
+        "responseLabel": "Response Time",
+        "projects": "50+",
+        "projectsLabel": "Projects Delivered",
+        "satisfaction": "98%",
+        "satisfactionLabel": "Client Satisfaction"
+      }
+    }
+  },
+  "projects": {
+    "hero": {
+      "badge": "Our Work",
+      "title": "Projects That Make",
+      "titleHighlight": "Impact",
+      "subtitle": "Explore our portfolio of successful projects. From startups to enterprise solutions, we've helped businesses transform their ideas into powerful digital experiences.",
+      "stats": {
+        "delivered": "Projects Delivered",
+        "clients": "Happy Clients",
+        "success": "Success Rate",
+        "experience": "Years Experience"
+      }
+    },
+    "filter": {
+      "all": "All Projects",
+      "category": "Category",
+      "technology": "Technology",
+      "clear": "Clear Filters"
+    },
+    "categories": {
+      "all": "All",
+      "ecommerce": "E-Commerce",
+      "saas": "SaaS",
+      "portfolio": "Portfolio",
+      "webapp": "Web App",
+      "mobile": "Mobile"
+    },
+    "technologies": {
+      "all": "All",
+      "react": "React",
+      "nextjs": "Next.js",
+      "typescript": "TypeScript",
+      "nodejs": "Node.js",
+      "python": "Python"
+    },
+    "stats": {
+      "title": "Project Statistics",
+      "totalProjects": "Total Projects",
+      "activeClients": "Active Clients",
+      "completionRate": "Completion Rate",
+      "avgRating": "Average Rating"
     }
   },
   "cookies": {

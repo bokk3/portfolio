@@ -95,7 +95,7 @@
       ]
     },
     "cta": {
-      "title": "Klaar om Uw Project te Starten?",
+      "title": "Klaar om uw Project te starten?",
       "subtitle": "Laten we uw ideeën tot leven brengen. Neem vandaag contact op voor een gratis consultatie en offerte.",
       "button1": "Aan de Slag",
       "button2": "Portfolio Bekijken",
@@ -116,6 +116,7 @@
   },
   "nav": {
     "home": "Home",
+    "services": "Diensten",
     "projects": "Projecten",
     "blog": "Blog",
     "contact": "Contact",
@@ -169,7 +170,12 @@
     "hero": {
       "badge": "Laten We Samenwerken",
       "title": "Neem Contact Op",
-      "subtitle": "Klaar om uw project te starten? We horen graag van u. Stuur ons een bericht en we reageren zo snel mogelijk."
+      "subtitle": "Klaar om uw project te starten? We horen graag van u. Stuur ons een bericht en we reageren zo snel mogelijk.",
+      "whyChoose": "Waarom Ons Kiezen?",
+      "happyClients": "Tevreden Klanten",
+      "successRate": "Succespercentage",
+      "responseTime": "Reactie binnen 2 uur",
+      "location": "Gevestigd in Leuven, België"
     },
     "form": {
       "title": "Stuur ons een bericht",
@@ -232,7 +238,7 @@
     },
     "map": {
       "title": "Vind Ons",
-      "subtitle": "Gelegen in het hart van Brussel, zijn we gemakkelijk bereikbaar met het openbaar vervoer en de auto.",
+      "subtitle": "Gelegen in Leuven, België, zijn we gemakkelijk bereikbaar met het openbaar vervoer en de auto.",
       "placeholder": "Interactieve Kaart",
       "locationInfo": {
         "title": "Locatiedetails",
@@ -249,6 +255,215 @@
         "description": "We ontmoeten u graag persoonlijk! Plan een bezoek aan ons kantoor.",
         "schedule": "Plan een bezoek"
       }
+    }
+  },
+  "services": {
+    "hero": {
+      "badge": "Onze Diensten",
+      "title": "Uitgebreide Web",
+      "titleHighlight": "Ontwikkelingsoplossingen",
+      "subtitle": "Van concept tot implementatie bieden wij end-to-end webontwikkelingsdiensten op maat van uw bedrijfsbehoeften en doelen.",
+      "services": {
+        "webdev": "Webontwikkeling",
+        "ecommerce": "E-Commerce",
+        "backend": "Backend APIs",
+        "performance": "Optimalisatie"
+      }
+    },
+    "webdev": {
+      "title": "Webontwikkeling",
+      "description": "Aangepaste websites en webapplicaties gebouwd met moderne frameworks, responsief ontwerp en beste praktijken.",
+      "features": {
+        "0": "React & Next.js Ontwikkeling",
+        "1": "TypeScript Integratie",
+        "2": "Responsief Mobile-First Ontwerp",
+        "3": "Progressive Web Apps (PWA)",
+        "4": "SEO Optimalisatie"
+      }
+    },
+    "ecommerce": {
+      "title": "E-Commerce Oplossingen",
+      "description": "Complete online winkels met betalingsintegratie, voorraadbeheer, analytics en alles wat u nodig heeft.",
+      "features": {
+        "0": "Shopify & WooCommerce Setup",
+        "1": "Betalingsgateway Integratie",
+        "2": "Productbeheersystemen",
+        "3": "Orderverwerking & Fulfillment",
+        "4": "Analytics & Rapportage"
+      }
+    },
+    "backend": {
+      "title": "Backend Ontwikkeling",
+      "description": "Robuuste API's en server-side oplossingen om uw applicaties aan te drijven met schaalbare architectuur.",
+      "features": {
+        "0": "REST & GraphQL APIs",
+        "1": "Node.js & Python Ontwikkeling",
+        "2": "Database Ontwerp & Beheer",
+        "3": "Cloud Infrastructuur Setup",
+        "4": "Authenticatie & Beveiliging"
+      }
+    },
+    "performance": {
+      "title": "Prestatie Optimalisatie",
+      "description": "Versnel uw website en verbeter de gebruikerservaring met gerichte optimalisaties en monitoring.",
+      "features": {
+        "0": "Core Web Vitals Optimalisatie",
+        "1": "SEO & Technische Audits",
+        "2": "CDN Integratie & Caching",
+        "3": "Afbeelding & Asset Optimalisatie",
+        "4": "Prestatie Monitoring"
+      }
+    },
+    "grid": {
+      "features": "Wat is Inbegrepen",
+      "technologies": "Technologieën",
+      "getStarted": "Aan de Slag"
+    },
+    "process": {
+      "title": "Ons Ontwikkelingsproces",
+      "subtitle": "Een bewezen methodologie die succesvolle projectoplevering garandeert van start tot finish.",
+      "consultation": {
+        "title": "Consultatie",
+        "description": "We beginnen met het begrijpen van uw bedrijfsdoelen, doelgroep en technische vereisten."
+      },
+      "planning": {
+        "title": "Planning & Ontwerp",
+        "description": "Gedetailleerde projectplanning, wireframing en ontwerpmockups om uw project te visualiseren."
+      },
+      "development": {
+        "title": "Ontwikkeling",
+        "description": "Agile ontwikkelingsproces met regelmatige updates, testen en kwaliteitsborging."
+      },
+      "launch": {
+        "title": "Lancering & Ondersteuning",
+        "description": "Soepele implementatie naar productie met doorlopende ondersteuning en onderhoud."
+      }
+    },
+    "pricing": {
+      "title": "Transparante Prijzen",
+      "subtitle": "Kies het pakket dat bij uw behoeften past. Alle plannen bevatten onze toewijding aan kwaliteit.",
+      "popular": "Meest Populair",
+      "starter": {
+        "name": "Starter",
+        "description": "Perfect voor kleine bedrijven en persoonlijke projecten",
+        "price": "€2.500",
+        "period": "/project",
+        "features": {
+          "0": "5-pagina responsieve website",
+          "1": "Mobile-first ontwerp",
+          "2": "Basis SEO optimalisatie",
+          "3": "Contactformulier integratie",
+          "4": "3 maanden ondersteuning"
+        }
+      },
+      "professional": {
+        "name": "Professioneel",
+        "description": "Ideaal voor groeiende bedrijven en e-commerce",
+        "price": "€5.000",
+        "period": "/project",
+        "features": {
+          "0": "Aangepaste webapplicatie",
+          "1": "E-commerce functionaliteit",
+          "2": "Geavanceerde SEO & analytics",
+          "3": "Betalingsintegratie",
+          "4": "CMS integratie",
+          "5": "6 maanden ondersteuning"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "Voor grootschalige applicaties en complexe vereisten",
+        "price": "Op Maat",
+        "period": "/offerte",
+        "features": {
+          "0": "Schaalbare architectuur",
+          "1": "Aangepaste backend ontwikkeling",
+          "2": "Derde partij integraties",
+          "3": "Geavanceerde beveiligingsfeatures",
+          "4": "Prestatie optimalisatie",
+          "5": "12 maanden ondersteuning"
+        }
+      },
+      "getStarted": "Aan de Slag"
+    },
+    "testimonials": {
+      "title": "Wat Onze Klanten Zeggen",
+      "subtitle": "Geloof ons niet zomaar op ons woord. Hier is wat onze tevreden klanten zeggen over onze diensten.",
+      "testimonial1": {
+        "name": "Sarah Johnson",
+        "role": "Marketing Directeur",
+        "company": "TechStart Inc",
+        "content": "Het team leverde een uitzonderlijk e-commerce platform dat onze verwachtingen overtrof. Onze online verkoop steeg met 150%."
+      },
+      "testimonial2": {
+        "name": "Michael Chen",
+        "role": "CEO",
+        "company": "Digital Solutions",
+        "content": "Professioneel, betrouwbaar en ongelooflijk bekwaam. Ze transformeerden onze verouderde website naar een modern platform."
+      },
+      "testimonial3": {
+        "name": "Emma Rodriguez",
+        "role": "Oprichter",
+        "company": "Creative Studio",
+        "content": "Uitstekende communicatie en technische expertise. De aangepaste webapplicatie heeft ons hele bedrijfsproces gestroomlijnd."
+      }
+    },
+    "cta": {
+      "title": "Klaar om Uw Project te Starten?",
+      "subtitle": "Laten we uw vereisten bespreken en samen iets geweldigs creëren. Neem contact op voor een gratis consultatie.",
+      "primary": "Start Uw Project",
+      "secondary": "Bekijk Ons Werk",
+      "stats": {
+        "response": "24u",
+        "responseLabel": "Reactietijd",
+        "projects": "50+",
+        "projectsLabel": "Projecten Afgeleverd",
+        "satisfaction": "98%",
+        "satisfactionLabel": "Klanttevredenheid"
+      }
+    }
+  },
+  "projects": {
+    "hero": {
+      "badge": "Ons Werk",
+      "title": "Projecten Die",
+      "titleHighlight": "Impact Maken",
+      "subtitle": "Verken ons portfolio van succesvolle projecten. Van startups tot enterprise oplossingen, we hebben bedrijven geholpen hun ideeën om te zetten in krachtige digitale ervaringen.",
+      "stats": {
+        "delivered": "Projecten Afgeleverd",
+        "clients": "Tevreden Klanten",
+        "success": "Succespercentage",
+        "experience": "Jaren Ervaring"
+      }
+    },
+    "filter": {
+      "all": "Alle Projecten",
+      "category": "Categorie",
+      "technology": "Technologie",
+      "clear": "Filters Wissen"
+    },
+    "categories": {
+      "all": "Alle",
+      "ecommerce": "E-Commerce",
+      "saas": "SaaS",
+      "portfolio": "Portfolio",
+      "webapp": "Web App",
+      "mobile": "Mobiel"
+    },
+    "technologies": {
+      "all": "Alle",
+      "react": "React",
+      "nextjs": "Next.js",
+      "typescript": "TypeScript",
+      "nodejs": "Node.js",
+      "python": "Python"
+    },
+    "stats": {
+      "title": "Projectstatistieken",
+      "totalProjects": "Totaal Projecten",
+      "activeClients": "Actieve Klanten",
+      "completionRate": "Voltooiingspercentage",
+      "avgRating": "Gemiddelde Beoordeling"
     }
   },
   "cookies": {
