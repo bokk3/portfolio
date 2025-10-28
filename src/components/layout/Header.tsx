@@ -7,6 +7,7 @@ import { useParams, usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
+import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import { Menu, X } from 'lucide-react';
 import { MobileNav } from './MobileNav';
 
@@ -50,7 +51,7 @@ export function Header() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? 'bg-white/95 backdrop-blur-md shadow-md'
+            ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-md dark:shadow-gray-800/20'
             : 'bg-transparent'
         }`}
       >
@@ -60,7 +61,7 @@ export function Header() {
               <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">W</span>
               </div>
-              <span className="font-bold text-xl text-gray-900">WebDev</span>
+              <span className="font-bold text-xl text-gray-900 dark:text-white">WebDev</span>
             </Link>
 
             <div className="hidden md:flex items-center space-x-8">
@@ -68,7 +69,7 @@ export function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                  className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
                 >
                   {item.name}
                 </Link>
@@ -83,18 +84,20 @@ export function Header() {
                       href={switchLocale(lang.code)}
                       className={`font-medium transition-colors ${
                         currentLocale === lang.code
-                          ? 'text-blue-600'
-                          : 'text-gray-600 hover:text-blue-600'
+                          ? 'text-blue-600 dark:text-blue-400'
+                          : 'text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
                       }`}
                     >
                       {lang.label}
                     </Link>
                     {index < languages.length - 1 && (
-                      <span className="mx-2 text-gray-300">|</span>
+                      <span className="mx-2 text-gray-300 dark:text-gray-600">|</span>
                     )}
                   </div>
                 ))}
               </div>
+              
+              <ThemeToggle />
               
               <Button href={`/${currentLocale}/contact`} size="sm">
                 {t('getStarted')}
@@ -103,7 +106,7 @@ export function Header() {
 
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 text-gray-700 hover:text-blue-600 transition-colors"
+              className="md:hidden p-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? (

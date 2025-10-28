@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
+import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import { useEffect } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { LanguageSwitcher } from './LanguageSwitcher';
@@ -44,7 +45,7 @@ export function MobileNav({ isOpen, onClose, navigation }: MobileNavProps) {
       />
 
       {/* Menu */}
-      <div className="fixed top-16 left-0 right-0 bottom-0 bg-white z-40 md:hidden overflow-y-auto">
+      <div className="fixed top-16 left-0 right-0 bottom-0 bg-white dark:bg-gray-900 z-40 md:hidden overflow-y-auto">
         <div className="px-4 py-6 space-y-6">
           {/* Navigation Links */}
           <nav className="space-y-4">
@@ -53,7 +54,7 @@ export function MobileNav({ isOpen, onClose, navigation }: MobileNavProps) {
                 key={item.name}
                 href={item.href}
                 onClick={onClose}
-                className="block text-lg font-medium text-gray-900 hover:text-blue-600 transition-colors py-2"
+                className="block text-lg font-medium text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2"
               >
                 {item.name}
               </Link>
@@ -61,10 +62,11 @@ export function MobileNav({ isOpen, onClose, navigation }: MobileNavProps) {
           </nav>
 
           {/* Language Toggle */}
-          <div className="pt-6 border-t border-gray-200">
-            <p className="text-sm font-medium text-gray-500 mb-3">Language</p>
-            <div className="flex space-x-4">
+          <div className="pt-6 border-t border-gray-200 dark:border-gray-700">
+            <p className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-3">Language & Theme</p>
+            <div className="flex items-center justify-between">
               <LanguageSwitcher />
+              <ThemeToggle />
             </div>
           </div>
 

@@ -53,12 +53,12 @@ export function Services() {
   ];
 
   return (
-    <Section id="services" className="bg-white">
+    <Section id="services" className="bg-white dark:bg-gray-900">
       <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
           {t('title')}
         </h2>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
           {t('subtitle')}
         </p>
       </div>
@@ -67,20 +67,20 @@ export function Services() {
         {services.map((service, index) => (
           <div
             key={index}
-            className="group p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-blue-200"
+            className="group p-6 bg-gray-50 dark:bg-gray-800 rounded-2xl hover:shadow-lg dark:hover:shadow-gray-700/20 transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:border-blue-200 dark:hover:border-blue-600"
           >
-            <div className="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
-              <service.icon className="w-7 h-7 text-blue-600 group-hover:text-white transition-colors" />
+            <div className="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
+              <service.icon className="w-7 h-7 text-blue-600 dark:text-blue-400 group-hover:text-white transition-colors" />
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
               {service.title}
             </h3>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 dark:text-gray-300 mb-4">
               {service.description}
             </p>
             <ul className="space-y-2">
               {service.features.map((feature, idx) => (
-                <li key={idx} className="flex items-center text-sm text-gray-600">
+                <li key={idx} className="flex items-center text-sm text-gray-600 dark:text-gray-400">
                   <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2" />
                   {feature}
                 </li>

@@ -11,7 +11,7 @@ export function Hero() {
   const locale = useLocale();
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 via-blue-50 to-gray-50">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 via-blue-50 to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob" />
@@ -24,13 +24,13 @@ export function Hero() {
           {/* Left Content */}
           <div className="flex-1 text-center lg:text-left pt-20 lg:pt-0">
             {/* Badge */}
-            <div className="inline-flex items-center space-x-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <div className="inline-flex items-center space-x-2 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
               <Sparkles className="w-4 h-4" />
               <span>{t('badge')}</span>
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
               {t('title')}
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
                 {t('titleHighlight')}
@@ -38,7 +38,7 @@ export function Hero() {
             </h1>
 
             {/* Subheading */}
-            <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0">
               {t('subtitle')}
             </p>
 
@@ -56,16 +56,16 @@ export function Hero() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 mt-12 max-w-lg mx-auto lg:mx-0">
               <div>
-                <div className="text-3xl font-bold text-gray-900">50+</div>
-                <div className="text-sm text-gray-600">{tStats('projects')}</div>
+                <div className="text-3xl font-bold text-gray-900 dark:text-white">50+</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">{tStats('projects')}</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-gray-900">98%</div>
-                <div className="text-sm text-gray-600">{tStats('satisfaction')}</div>
+                <div className="text-3xl font-bold text-gray-900 dark:text-white">98%</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">{tStats('satisfaction')}</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-gray-900">5+</div>
-                <div className="text-sm text-gray-600">{tStats('experience')}</div>
+                <div className="text-3xl font-bold text-gray-900 dark:text-white">5+</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">{tStats('experience')}</div>
               </div>
             </div>
           </div>
