@@ -76,29 +76,29 @@ export function Header() {
               ))}
             </div>
 
-            <div className="hidden md:flex items-center space-x-4">
-              <div className="flex items-center space-x-2 text-sm">
+            <div className="hidden md:flex items-center space-x-6">
+              {/* Language Switcher */}
+              <div className="flex items-center space-x-1">
                 {languages.map((lang, index) => (
                   <div key={lang.code} className="flex items-center">
                     <Link
                       href={switchLocale(lang.code)}
-                      className={`font-medium transition-colors ${
+                      className={`px-2 py-1 text-sm font-medium rounded transition-colors ${
                         currentLocale === lang.code
-                          ? 'text-blue-600 dark:text-blue-400'
-                          : 'text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
+                          ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400'
+                          : 'text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800'
                       }`}
                     >
                       {lang.label}
                     </Link>
-                    {index < languages.length - 1 && (
-                      <span className="mx-2 text-gray-300 dark:text-gray-600">|</span>
-                    )}
                   </div>
                 ))}
               </div>
               
+              {/* Theme Toggle */}
               <ThemeToggle />
               
+              {/* CTA Button */}
               <Button href={`/${currentLocale}/contact`} size="sm">
                 {t('getStarted')}
               </Button>

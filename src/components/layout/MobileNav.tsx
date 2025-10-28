@@ -62,10 +62,16 @@ export function MobileNav({ isOpen, onClose, navigation }: MobileNavProps) {
           </nav>
 
           {/* Language Toggle */}
-          <div className="pt-6 border-t border-gray-200 dark:border-gray-700">
-            <p className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-3">Language & Theme</p>
-            <div className="flex items-center justify-between">
+          <div className="pt-6 border-t border-gray-200 dark:border-gray-700 space-y-4">
+            {/* Language Switcher */}
+            <div>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-3">Language</p>
               <LanguageSwitcher />
+            </div>
+            
+            {/* Theme Toggle */}
+            <div>
+              <p className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-3">Theme</p>
               <ThemeToggle />
             </div>
           </div>

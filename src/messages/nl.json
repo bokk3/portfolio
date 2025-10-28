@@ -160,5 +160,95 @@
     "delivered": "Projecten Afgeleverd",
     "rate": "Tevredenheidspercentage",
     "support": "Ondersteuning Beschikbaar"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Laatste inzichten, tutorials en gedachten over webontwikkeling, design en technologietrends."
+  },
+  "contact": {
+    "hero": {
+      "badge": "Laten We Samenwerken",
+      "title": "Neem Contact Op",
+      "subtitle": "Klaar om uw project te starten? We horen graag van u. Stuur ons een bericht en we reageren zo snel mogelijk."
+    },
+    "form": {
+      "title": "Stuur ons een bericht",
+      "name": "Volledige Naam",
+      "namePlaceholder": "Uw volledige naam",
+      "email": "E-mailadres",
+      "emailPlaceholder": "uw@email.com",
+      "company": "Bedrijf",
+      "companyPlaceholder": "Uw bedrijfsnaam",
+      "phone": "Telefoonnummer",
+      "phonePlaceholder": "+32 123 456 789",
+      "subject": "Onderwerp",
+      "subjectPlaceholder": "Waar gaat dit over?",
+      "budget": "Projectbudget",
+      "budgetSelect": "Selecteer budgetbereik",
+      "timeline": "Tijdlijn",
+      "timelineSelect": "Selecteer tijdlijn",
+      "timelineASAP": "Zo snel mogelijk",
+      "timeline1to3": "1-3 maanden",
+      "timeline3to6": "3-6 maanden",
+      "timeline6plus": "6+ maanden",
+      "message": "Bericht",
+      "messagePlaceholder": "Vertel ons over uw project...",
+      "send": "Bericht Verzenden",
+      "sending": "Verzenden...",
+      "success": "Dank je! Uw bericht is succesvol verzonden. We nemen binnen 24 uur contact met u op.",
+      "error": "Sorry, er is een fout opgetreden bij het verzenden van uw bericht. Probeer het opnieuw of neem direct contact met ons op."
+    },
+    "info": {
+      "title": "Contactinformatie",
+      "email": {
+        "title": "E-mail Ons",
+        "description": "Stuur ons altijd een e-mail"
+      },
+      "phone": {
+        "title": "Bel Ons",
+        "description": "Ma-Vr van 9:00 tot 18:00"
+      },
+      "address": {
+        "title": "Bezoek Ons",
+        "description": "Kom gedag zeggen op ons kantoor"
+      },
+      "hours": {
+        "title": "Openingstijden",
+        "monday": "Maandag",
+        "tuesday": "Dinsdag",
+        "wednesday": "Woensdag",
+        "thursday": "Donderdag",
+        "friday": "Vrijdag",
+        "saturday": "Zaterdag",
+        "sunday": "Zondag",
+        "closed": "Gesloten"
+      },
+      "quickActions": {
+        "title": "Snelle Acties",
+        "quickQuestion": "Stel een snelle vraag",
+        "scheduleMeeting": "Plan een vergadering"
+      },
+      "responseTime": "⚡ We reageren meestal binnen 24 uur"
+    },
+    "map": {
+      "title": "Vind Ons",
+      "subtitle": "Gelegen in het hart van Brussel, zijn we gemakkelijk bereikbaar met het openbaar vervoer en de auto.",
+      "placeholder": "Interactieve Kaart",
+      "locationInfo": {
+        "title": "Locatiedetails",
+        "address": "Adres",
+        "timezone": "Tijdzone"
+      },
+      "directions": {
+        "title": "Routebeschrijving",
+        "google": "Openen in Google Maps",
+        "publicTransport": "Openbaar Vervoer:"
+      },
+      "visit": {
+        "title": "Plan een Bezoek",
+        "description": "We ontmoeten u graag persoonlijk! Plan een bezoek aan ons kantoor.",
+        "schedule": "Plan een bezoek"
+      }
+    }
   }
 }

@@ -17,21 +17,19 @@ export function LanguageSwitcher() {
   };
 
   return (
-    <div className="flex items-center space-x-2 text-sm">
-      {locales.map((loc, index) => (
-        <span key={loc}>
-          <button
-            onClick={() => switchLocale(loc)}
-            className={`font-medium transition-colors ${
-              locale === loc
-                ? 'text-blue-600'
-                : 'text-gray-600 hover:text-blue-600'
-            }`}
-          >
-            {loc.toUpperCase()}
-          </button>
-          {index < locales.length - 1 && <span className="text-gray-300">|</span>}
-        </span>
+    <div className="flex items-center space-x-2">
+      {locales.map((loc) => (
+        <button
+          key={loc}
+          onClick={() => switchLocale(loc)}
+          className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
+            locale === loc
+              ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400'
+              : 'text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800'
+          }`}
+        >
+          {loc.toUpperCase()}
+        </button>
       ))}
     </div>
   );

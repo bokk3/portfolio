@@ -160,6 +160,96 @@
     "delivered": "Projets Livrés",
     "rate": "Taux de Satisfaction",
     "support": "Support 24/7 Disponible"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Dernières actualités, tutoriels et réflexions sur le développement web, le design et les tendances technologiques."
+  },
+  "contact": {
+    "hero": {
+      "badge": "Travaillons Ensemble",
+      "title": "Contactez-Nous",
+      "subtitle": "Prêt à démarrer votre projet ? Nous aimerions avoir de vos nouvelles. Envoyez-nous un message et nous répondrons dès que possible."
+    },
+    "form": {
+      "title": "Envoyez-nous un message",
+      "name": "Nom Complet",
+      "namePlaceholder": "Votre nom complet",
+      "email": "Adresse Email",
+      "emailPlaceholder": "votre@email.com",
+      "company": "Entreprise",
+      "companyPlaceholder": "Nom de votre entreprise",
+      "phone": "Numéro de Téléphone",
+      "phonePlaceholder": "+32 123 456 789",
+      "subject": "Sujet",
+      "subjectPlaceholder": "De quoi s'agit-il ?",
+      "budget": "Budget du Projet",
+      "budgetSelect": "Sélectionner la gamme de budget",
+      "timeline": "Délai",
+      "timelineSelect": "Sélectionner le délai",
+      "timelineASAP": "Dès que possible",
+      "timeline1to3": "1-3 mois",
+      "timeline3to6": "3-6 mois",
+      "timeline6plus": "6+ mois",
+      "message": "Message",
+      "messagePlaceholder": "Parlez-nous de votre projet...",
+      "send": "Envoyer le Message",
+      "sending": "Envoi en cours...",
+      "success": "Merci ! Votre message a été envoyé avec succès. Nous vous répondrons dans les 24 heures.",
+      "error": "Désolé, il y a eu une erreur lors de l'envoi de votre message. Veuillez réessayer ou nous contacter directement."
+    },
+    "info": {
+      "title": "Informations de Contact",
+      "email": {
+        "title": "Envoyez-nous un Email",
+        "description": "Envoyez-nous un email à tout moment"
+      },
+      "phone": {
+        "title": "Appelez-Nous",
+        "description": "Lun-Ven de 9h à 18h"
+      },
+      "address": {
+        "title": "Visitez-Nous",
+        "description": "Venez nous dire bonjour à notre bureau"
+      },
+      "hours": {
+        "title": "Heures d'Ouverture",
+        "monday": "Lundi",
+        "tuesday": "Mardi",
+        "wednesday": "Mercredi",
+        "thursday": "Jeudi",
+        "friday": "Vendredi",
+        "saturday": "Samedi",
+        "sunday": "Dimanche",
+        "closed": "Fermé"
+      },
+      "quickActions": {
+        "title": "Actions Rapides",
+        "quickQuestion": "Poser une question rapide",
+        "scheduleMeeting": "Planifier une réunion"
+      },
+      "responseTime": "⚡ Nous répondons généralement dans les 24 heures"
+    },
+    "map": {
+      "title": "Trouvez-Nous",
+      "subtitle": "Situés au cœur de Bruxelles, nous sommes facilement accessibles en transport public et en voiture.",
+      "placeholder": "Carte Interactive",
+      "locationInfo": {
+        "title": "Détails de l'Emplacement",
+        "address": "Adresse",
+        "timezone": "Fuseau Horaire"
+      },
+      "directions": {
+        "title": "Obtenir des Directions",
+        "google": "Ouvrir dans Google Maps",
+        "publicTransport": "Transport Public :"
+      },
+      "visit": {
+        "title": "Planifier une Visite",
+        "description": "Nous aimerions vous rencontrer en personne ! Planifiez une visite à notre bureau.",
+        "schedule": "Planifier une visite"
+      }
+    }
   }
 }
 
