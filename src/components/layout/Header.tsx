@@ -13,7 +13,7 @@ import { MobileNav } from './MobileNav';
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const t = useTranslations('navigation');
+  const t = useTranslations('nav');
   const params = useParams();
   const pathname = usePathname();
   const currentLocale = (params.locale as string) || 'en';
