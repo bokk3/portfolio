@@ -99,33 +99,23 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Partnership Section */}
-        <div className="border-t border-gray-800 dark:border-gray-700 py-6">
-          <div className="text-center mb-4">
-            <p className="text-sm text-gray-400 dark:text-gray-500 mb-2">
-              {t('partnership.text')}
-            </p>
-            <a
-              href="https://www.edgeforge.eu/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition-colors font-medium"
-            >
-              <span>EdgeForge</span>
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 dark:border-gray-700 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-gray-400 dark:text-gray-500">
               {t('copyright', { year: currentYear })}
             </p>
-            <p className="text-sm text-gray-400 dark:text-gray-500">
+            <p className="text-sm text-gray-400 dark:text-gray-500 text-center md:text-right">
+              {t('partnership.text')}{' '}
+              <a
+                href="https://www.edgeforge.eu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-blue-300 transition-colors font-medium"
+              >
+                EdgeForge
+              </a>
+              {' • '}
               {t('made')}
             </p>
           </div>
