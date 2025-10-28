@@ -120,9 +120,6 @@ export function Header() {
         isOpen={isMobileMenuOpen} 
         onClose={() => setIsMobileMenuOpen(false)}
         navigation={navigation}
-        languages={languages}
-        currentLocale={currentLocale}
-        switchLocale={switchLocale}
       />
     </>
   );

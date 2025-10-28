@@ -1,8 +1,7 @@
 // src/i18n.ts
-import { getRequestConfig } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { getRequestConfig } from 'next-intl/server';
 
-// Can be imported from a shared config
 export const locales = ['en', 'nl', 'fr'] as const;
 export type Locale = (typeof locales)[number];
 
@@ -12,9 +11,9 @@ export default getRequestConfig(async ({ locale }) => {
     notFound();
   }
 
-  // @ts-ignore - locale is guaranteed to be valid by check above
   return {
     locale: locale as Locale,
-    messages: (await import(`../messages/${locale}.json`)).default
+    messages: (await import(`./messages/${locale}.json`)).default
   };
 });
+

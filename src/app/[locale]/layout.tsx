@@ -1,6 +1,8 @@
 // src/app/[locale]/layout.tsx
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
 import '../globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
@@ -21,14 +23,15 @@ export default async function LocaleLayout({
 }) {
   // Await params in Next.js 15
   const { locale } = await params;
+  
+  // Providing all messages to the client
+  const messages = await getMessages();
 
   return (
-    <html lang={locale} className="scroll-smooth">
-      <body className={inter.className}>
-        <Header />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <NextIntlClientProvider messages={messages}>
+      <Header />
+      {children}
+      <Footer />
+    </NextIntlClientProvider>
   );
 }
