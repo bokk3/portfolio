@@ -4,7 +4,7 @@ version: '3.8'
 services:
   # Service principal Next.js
   web:
-    build: 
+    build:
       context: .
       dockerfile: Dockerfile
     ports:
@@ -24,7 +24,7 @@ services:
       - "443:443"
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
-      - ./ssl:/etc/nginx/ssl:ro  # Pour les certificats SSL
+      - ./ssl:/etc/nginx/ssl:ro # Pour les certificats SSL
     depends_on:
       - web
     restart: unless-stopped
@@ -62,6 +62,7 @@ services:
 volumes:
   postgres_data:
   redis_data:
+
 
 networks:
   app-network:
