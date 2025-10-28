@@ -3,7 +3,7 @@ name: Example Usage of Docker Release Action
 on:
   push:
     branches:
-      - release/*
+      - main
     paths-ignore:
       - 'docs/**'
       - '*.md'
