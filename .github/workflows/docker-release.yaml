@@ -24,6 +24,7 @@ jobs:
 
       - name: Tag with GitVersion
         uses: michielvha/gitversion-tag-action@v5
+        id: gitversion
         with:
           configFilePath: 'gitversion.yml'
 
