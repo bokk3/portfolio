@@ -14,23 +14,23 @@ export function ContactInfo({ locale }: ContactInfoProps) {
     {
       icon: Mail,
       title: t('email.title'),
-      value: 'contact@webdev.com',
+      value: 'contact@truyens.pro',
       description: t('email.description'),
-      href: 'mailto:contact@webdev.com',
+      href: 'mailto:contact@truyens.pro',
       color: 'bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400',
     },
     {
       icon: Phone,
       title: t('phone.title'),
-      value: '+32 123 456 789',
+      value: '+32 479 12 44 28',
       description: t('phone.description'),
-      href: 'tel:+32123456789',
+      href: 'tel:+32479124428',
       color: 'bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400',
     },
     {
       icon: MapPin,
       title: t('address.title'),
-      value: 'Brussels, Belgium',
+      value: 'Leuven, Belgium',
       description: t('address.description'),
       href: '#',
       color: 'bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400',
@@ -108,7 +108,7 @@ export function ContactInfo({ locale }: ContactInfoProps) {
         
         <div className="space-y-3">
           <a
-            href="mailto:contact@webdev.com?subject=Quick Question"
+            href="mailto:contact@truyens.pro?subject=Quick Question"
             className="flex items-center space-x-3 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
           >
             <MessageCircle className="w-5 h-5" />
@@ -116,7 +116,7 @@ export function ContactInfo({ locale }: ContactInfoProps) {
           </a>
           
           <a
-            href="mailto:contact@webdev.com?subject=Schedule Meeting"
+            href="mailto:contact@truyens.pro?subject=Schedule Meeting"
             className="flex items-center space-x-3 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
           >
             <Calendar className="w-5 h-5" />

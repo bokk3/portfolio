@@ -27,18 +27,18 @@ export function ContactHero() {
                     {/* Quick Contact Options */}
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
-                            href="tel:+32123456789"
+                            href="tel:+32479124428"
                             className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm hover:bg-white/20 px-6 py-3 rounded-lg transition-colors"
                         >
                             <Phone className="w-5 h-5" />
-                            <span>+32 123 456 789</span>
+                            <span>+32 479 12 44 28</span>
                         </a>
                         <a
-                            href="mailto:contact@webdev.com"
+                            href="mailto:contact@truyens.pro"
                             className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm hover:bg-white/20 px-6 py-3 rounded-lg transition-colors"
                         >
                             <Mail className="w-5 h-5" />
-                            <span>contact@webdev.com</span>
+                            <span>contact@truyens.pro</span>
                         </a>
                     </div>
                 </div>

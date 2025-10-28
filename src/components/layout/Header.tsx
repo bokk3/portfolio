@@ -59,9 +59,9 @@ export function Header() {
           <nav className="flex items-center justify-between h-16 md:h-20">
             <Link href={`/${currentLocale}`} className="flex items-center space-x-2">
               <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">W</span>
+                <span className="text-white font-bold text-xl">T</span>
               </div>
-              <span className="font-bold text-xl text-gray-900 dark:text-white">WebDev</span>
+              <span className="font-bold text-xl text-gray-900 dark:text-white">truyens.pro</span>
             </Link>
 
             <div className="hidden md:flex items-center space-x-8">

@@ -24,11 +24,13 @@ export async function POST(request: NextRequest) {
     // 3. Send to a CRM system
     // 4. Send notifications to your team
 
-    // For now, we'll just log the data and return success
-    console.log('Contact form submission:', {
-      ...validatedData,
-      timestamp: new Date().toISOString(),
-    });
+    // Log form submission for development (remove in production)
+    if (process.env.NODE_ENV === 'development') {
+      console.log('Contact form submission:', {
+        ...validatedData,
+        timestamp: new Date().toISOString(),
+      });
+    }
 
     // Simulate email sending delay
     await new Promise(resolve => setTimeout(resolve, 1000));
@@ -36,7 +38,7 @@ export async function POST(request: NextRequest) {
     // Example: Send email using a service (uncomment and configure)
     /*
     await sendEmail({
-      to: 'contact@webdev.com',
+      to: 'contact@truyens.pro',
       subject: `New Contact Form: ${validatedData.subject}`,
       html: `
         <h2>New Contact Form Submission</h2>
@@ -71,7 +73,7 @@ export async function POST(request: NextRequest) {
         { 
           success: false, 
           message: 'Invalid form data',
-          errors: error.errors 
+          errors: error.issues 
         },
         { status: 400 }
       );

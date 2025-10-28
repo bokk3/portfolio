@@ -109,9 +109,9 @@
       "email": "Email",
       "phone": "Phone",
       "location": "Location",
-      "emailValue": "contact@webdev.com",
-      "phoneValue": "+32 123 456 789",
-      "locationValue": "Brussels, Belgium"
+      "emailValue": "contact@truyens.pro",
+      "phoneValue": "+32 479 12 44 28",
+      "locationValue": "Leuven, Belgium"
     }
   },
   "nav": {
@@ -143,7 +143,7 @@
       "terms": "Terms of Service",
       "cookies": "Cookie Policy"
     },
-    "copyright": "© {year} WebDev Agency. All rights reserved.",
+    "copyright": "© {year} truyens.pro. All rights reserved.",
     "made": "Made with ❤️ in Belgium 🇧🇪",
     "social": {
       "github": "GitHub",
@@ -249,6 +249,161 @@
         "description": "We'd love to meet you in person! Schedule a visit to our office.",
         "schedule": "Schedule a visit"
       }
+    }
+  },
+  "legal": {
+    "legal": "Legal",
+    "lastUpdated": "Last updated",
+    "privacypolicy": "Privacy Policy",
+    "termsofservice": "Terms of Service",
+    "cookiepolicy": "Cookie Policy",
+    "privacy": {
+      "dataCollection": {
+        "title": "Data Collection",
+        "content": "We collect information you provide directly to us, such as when you create an account, fill out a form, or contact us."
+      },
+      "personalInfo": {
+        "title": "Personal Information We Collect",
+        "name": "Name and contact information",
+        "email": "Email address",
+        "phone": "Phone number",
+        "company": "Company information",
+        "message": "Messages and communications"
+      },
+      "dataUsage": {
+        "title": "How We Use Your Data",
+        "content": "We use the information we collect to:",
+        "respond": "Respond to your inquiries and provide customer support",
+        "improve": "Improve our services and user experience",
+        "marketing": "Send you marketing communications (with your consent)",
+        "legal": "Comply with legal obligations"
+      },
+      "dataSharing": {
+        "title": "Data Sharing",
+        "content": "We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as described in this policy."
+      },
+      "dataSecurity": {
+        "title": "Data Security",
+        "content": "We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction."
+      },
+      "yourRights": {
+        "title": "Your Rights (GDPR)",
+        "content": "Under GDPR, you have the following rights:",
+        "access": "Right to access your personal data",
+        "rectification": "Right to rectification of inaccurate data",
+        "erasure": "Right to erasure (right to be forgotten)",
+        "portability": "Right to data portability",
+        "objection": "Right to object to processing"
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have any questions about this Privacy Policy, please contact us:"
+      }
+    },
+    "terms": {
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "content": "By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement."
+      },
+      "services": {
+        "title": "Use of Services",
+        "content": "Our services are provided for lawful purposes only. You agree to use our services in compliance with all applicable laws and regulations."
+      },
+      "userResponsibilities": {
+        "title": "User Responsibilities",
+        "content": "You are responsible for:",
+        "lawful": "Using our services in a lawful manner",
+        "accurate": "Providing accurate and complete information",
+        "respectful": "Maintaining respectful communication",
+        "security": "Keeping your account information secure"
+      },
+      "intellectualProperty": {
+        "title": "Intellectual Property",
+        "content": "All content on this website, including text, graphics, logos, and software, is the property of WebDev Agency and is protected by copyright laws."
+      },
+      "limitation": {
+        "title": "Limitation of Liability",
+        "content": "WebDev Agency shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of our services."
+      },
+      "termination": {
+        "title": "Termination",
+        "content": "We reserve the right to terminate or suspend access to our services at any time, without prior notice, for conduct that we believe violates these terms."
+      },
+      "governing": {
+        "title": "Governing Law",
+        "content": "These terms shall be governed by and construed in accordance with the laws of Belgium."
+      },
+      "changes": {
+        "title": "Changes to Terms",
+        "content": "We reserve the right to modify these terms at any time. Changes will be effective immediately upon posting on this website."
+      }
+    },
+    "cookies": {
+      "whatAre": {
+        "title": "What Are Cookies",
+        "content": "Cookies are small text files that are stored on your device when you visit our website. They help us provide you with a better browsing experience."
+      },
+      "howWeUse": {
+        "title": "How We Use Cookies",
+        "content": "We use different types of cookies for various purposes:"
+      },
+      "essential": {
+        "title": "Essential Cookies",
+        "content": "These cookies are necessary for the website to function properly:",
+        "session": "Session management and user authentication",
+        "preferences": "Remembering your preferences and settings",
+        "security": "Security and fraud prevention"
+      },
+      "analytics": {
+        "title": "Analytics Cookies",
+        "content": "These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously."
+      },
+      "marketing": {
+        "title": "Marketing Cookies",
+        "content": "These cookies are used to deliver relevant advertisements and track the effectiveness of our marketing campaigns."
+      },
+      "thirdParty": {
+        "title": "Third-Party Cookies",
+        "content": "We may use third-party services that set their own cookies:",
+        "analytics": "Website analytics and performance monitoring",
+        "fonts": "Font delivery and optimization"
+      },
+      "control": {
+        "title": "Cookie Control",
+        "content": "You can control and manage cookies through your browser settings or by using our cookie preference center."
+      },
+      "updates": {
+        "title": "Policy Updates",
+        "content": "We may update this cookie policy from time to time. Please check this page regularly for any changes."
+      }
+    }
+  },
+  "cookies": {
+    "banner": {
+      "title": "We use cookies",
+      "description": "We use cookies to enhance your browsing experience and analyze our traffic.",
+      "learnMore": "Learn more",
+      "customize": "Customize",
+      "reject": "Reject All",
+      "acceptAll": "Accept All"
+    },
+    "settings": {
+      "title": "Cookie Preferences",
+      "description": "Choose which cookies you want to accept. You can change these settings at any time.",
+      "essential": {
+        "title": "Essential Cookies",
+        "description": "Required for the website to function properly. Cannot be disabled."
+      },
+      "analytics": {
+        "title": "Analytics Cookies",
+        "description": "Help us understand how visitors interact with our website."
+      },
+      "marketing": {
+        "title": "Marketing Cookies",
+        "description": "Used to deliver relevant advertisements and track campaign effectiveness."
+      },
+      "savePreferences": "Save Preferences",
+      "acceptAll": "Accept All"
     }
   }
 }

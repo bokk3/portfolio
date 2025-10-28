@@ -69,7 +69,7 @@ export function ContactForm({ locale }: ContactFormProps) {
 
   return (
     <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8">
-      <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+      <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-8 heading-dyslexia-friendly">
         {t('title')}
       </h2>
 
@@ -95,14 +95,14 @@ export function ContactForm({ locale }: ContactFormProps) {
         {/* Name and Email Row */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+            <label htmlFor="name" className="block text-base font-medium text-gray-700 dark:text-gray-300 mb-3 text-dyslexia-friendly">
               {t('name')} *
             </label>
             <input
               {...register('name')}
               type="text"
               id="name"
-              className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+              className="w-full px-4 py-4 border-2 border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white text-dyslexia-friendly text-base"
               placeholder={t('namePlaceholder')}
             />
             {errors.name && (

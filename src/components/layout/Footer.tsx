@@ -20,9 +20,9 @@ export function Footer() {
             <div className="lg:col-span-2">
               <Link href={`/${locale}`} className="flex items-center space-x-2 mb-4">
                 <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">W</span>
+                  <span className="text-white font-bold text-xl">T</span>
                 </div>
-                <span className="font-bold text-xl text-white dark:text-gray-100">WebDev</span>
+                <span className="font-bold text-xl text-white dark:text-gray-100">truyens.pro</span>
               </Link>
               <p className="text-gray-400 dark:text-gray-500 mb-6 max-w-sm">
                 {t('description')}
@@ -32,7 +32,7 @@ export function Footer() {
                   { name: 'github', icon: Github, href: '#' },
                   { name: 'linkedin', icon: Linkedin, href: '#' },
                   { name: 'twitter', icon: Twitter, href: '#' },
-                  { name: 'email', icon: Mail, href: 'mailto:contact@webdev.com' },
+                  { name: 'email', icon: Mail, href: 'mailto:contact@truyens.pro' },
                 ].map((social) => (
                   <a
                     key={social.name}

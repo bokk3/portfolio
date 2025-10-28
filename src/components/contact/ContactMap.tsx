@@ -31,7 +31,7 @@ export function ContactMap() {
                     {t('placeholder')}
                   </p>
                   <p className="text-sm text-gray-400 dark:text-gray-500 mt-2">
-                    Brussels, Belgium
+                    Leuven, Belgium
                   </p>
                 </div>
               </div>
@@ -43,10 +43,10 @@ export function ContactMap() {
                     <MapPin className="w-5 h-5 text-blue-600 dark:text-blue-400 mt-0.5" />
                     <div>
                       <h3 className="font-semibold text-gray-900 dark:text-white">
-                        WebDev Agency
+                        truyens.pro
                       </h3>
                       <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Brussels, Belgium
+                        Leuven, Belgium
                       </p>
                     </div>
                   </div>
@@ -68,7 +68,7 @@ export function ContactMap() {
                     {t('locationInfo.address')}
                   </h4>
                   <p className="text-gray-600 dark:text-gray-300 text-sm">
-                    Brussels, Belgium<br />
+                    Leuven, Belgium<br />
                     European Union
                   </p>
                 </div>
@@ -92,7 +92,7 @@ export function ContactMap() {
               
               <div className="space-y-3">
                 <a
-                  href="https://maps.google.com/?q=Brussels,Belgium"
+                  href="https://maps.google.com/?q=Leuven,Belgium"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
@@ -106,7 +106,7 @@ export function ContactMap() {
                   <ul className="space-y-1 text-xs">
                     <li>• Metro: Lines 1, 5, 6</li>
                     <li>• Bus: Multiple lines</li>
-                    <li>• Train: Brussels Central</li>
+                    <li>• Train: Leuven Station</li>
                   </ul>
                 </div>
               </div>
@@ -120,7 +120,7 @@ export function ContactMap() {
                 {t('visit.description')}
               </p>
               <a
-                href="mailto:contact@webdev.com?subject=Office Visit"
+                href="mailto:contact@truyens.pro?subject=Office Visit"
                 className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium text-sm transition-colors"
               >
                 {t('visit.schedule')} →

@@ -109,9 +109,9 @@
       "email": "Email",
       "phone": "Téléphone",
       "location": "Localisation",
-      "emailValue": "contact@webdev.com",
-      "phoneValue": "+32 123 456 789",
-      "locationValue": "Bruxelles, Belgique"
+      "emailValue": "contact@truyens.pro",
+      "phoneValue": "+32 479 12 44 28",
+      "locationValue": "Leuven, Belgique"
     }
   },
   "nav": {
@@ -143,7 +143,7 @@
       "terms": "Conditions de Service",
       "cookies": "Politique des Cookies"
     },
-    "copyright": "© {year} WebDev Agency. Tous droits réservés.",
+    "copyright": "© {year} truyens.pro. Tous droits réservés.",
     "made": "Fait avec ❤️ en Belgique 🇧🇪",
     "social": {
       "github": "GitHub",
@@ -180,7 +180,7 @@
       "company": "Entreprise",
       "companyPlaceholder": "Nom de votre entreprise",
       "phone": "Numéro de Téléphone",
-      "phonePlaceholder": "+32 123 456 789",
+      "phonePlaceholder": "+32 479 12 44 28",
       "subject": "Sujet",
       "subjectPlaceholder": "De quoi s'agit-il ?",
       "budget": "Budget du Projet",
@@ -249,6 +249,34 @@
         "description": "Nous aimerions vous rencontrer en personne ! Planifiez une visite à notre bureau.",
         "schedule": "Planifier une visite"
       }
+    }
+  },
+  "cookies": {
+    "banner": {
+      "title": "Nous utilisons des cookies",
+      "description": "Nous utilisons des cookies pour améliorer votre expérience de navigation et analyser notre trafic.",
+      "learnMore": "En savoir plus",
+      "customize": "Personnaliser",
+      "reject": "Tout Refuser",
+      "acceptAll": "Tout Accepter"
+    },
+    "settings": {
+      "title": "Préférences des Cookies",
+      "description": "Choisissez les cookies que vous souhaitez accepter. Vous pouvez modifier ces paramètres à tout moment.",
+      "essential": {
+        "title": "Cookies Essentiels",
+        "description": "Nécessaires au bon fonctionnement du site web. Ne peuvent pas être désactivés."
+      },
+      "analytics": {
+        "title": "Cookies d'Analyse",
+        "description": "Nous aident à comprendre comment les visiteurs interagissent avec notre site web."
+      },
+      "marketing": {
+        "title": "Cookies Marketing",
+        "description": "Utilisés pour diffuser des publicités pertinentes et suivre l'efficacité des campagnes."
+      },
+      "savePreferences": "Enregistrer les Préférences",
+      "acceptAll": "Tout Accepter"
     }
   }
 }

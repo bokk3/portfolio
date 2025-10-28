@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { CookieBanner } from '@/components/legal/CookieBanner';
 
 export const metadata: Metadata = {
   title: 'WebDev Agency | Modern Web Development Solutions',
@@ -36,6 +37,7 @@ export default async function LocaleLayout({
       <Header />
       {children}
       <Footer />
+      <CookieBanner />
     </NextIntlClientProvider>
   );
 }

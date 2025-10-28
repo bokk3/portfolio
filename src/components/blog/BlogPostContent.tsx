@@ -9,7 +9,7 @@ interface BlogPostContentProps {
 
 export function BlogPostContent({ content }: BlogPostContentProps) {
   return (
-    <div className="prose prose-lg dark:prose-invert max-w-none">
+    <div className="prose prose-lg dark:prose-invert max-w-none prose-dyslexia-friendly">
       <style jsx global>{`
         .prose {
           color: rgb(55 65 81);

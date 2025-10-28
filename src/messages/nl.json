@@ -2,8 +2,8 @@
   "home": {
     "hero": {
       "badge": "Welkom bij de toekomst van webontwikkeling",
-      "title": "Bouwen aan Digitale",
-      "titleHighlight": "Ervaringen Die Schalen",
+      "title": "Digitale Ervaringen",
+      "titleHighlight": "Die Echt Schalen",
       "subtitle": "Moderne webontwikkelingsoplossingen voor ambitieuze bedrijven. Van concept tot implementatie, wij bouwen snelle, mooie en schaalbare applicaties.",
       "ctaPrimary": "Start Uw Project",
       "ctaSecondary": "Bekijk Ons Werk"
@@ -109,9 +109,9 @@
       "email": "E-mail",
       "phone": "Telefoon",
       "location": "Locatie",
-      "emailValue": "contact@webdev.com",
-      "phoneValue": "+32 123 456 789",
-      "locationValue": "Brussel, België"
+      "emailValue": "contact@truyens.pro",
+      "phoneValue": "+32 479 12 44 28",
+      "locationValue": "Leuven, België"
     }
   },
   "nav": {
@@ -143,7 +143,7 @@
       "terms": "Servicevoorwaarden",
       "cookies": "Cookiebeleid"
     },
-    "copyright": "© {year} WebDev Agency. Alle rechten voorbehouden.",
+    "copyright": "© {year} truyens.pro. Alle rechten voorbehouden.",
     "made": "Gemaakt met ❤️ in België 🇧🇪",
     "social": {
       "github": "GitHub",
@@ -180,7 +180,7 @@
       "company": "Bedrijf",
       "companyPlaceholder": "Uw bedrijfsnaam",
       "phone": "Telefoonnummer",
-      "phonePlaceholder": "+32 123 456 789",
+      "phonePlaceholder": "+32 479 12 44 28",
       "subject": "Onderwerp",
       "subjectPlaceholder": "Waar gaat dit over?",
       "budget": "Projectbudget",
@@ -249,6 +249,34 @@
         "description": "We ontmoeten u graag persoonlijk! Plan een bezoek aan ons kantoor.",
         "schedule": "Plan een bezoek"
       }
+    }
+  },
+  "cookies": {
+    "banner": {
+      "title": "We gebruiken cookies",
+      "description": "We gebruiken cookies om uw browse-ervaring te verbeteren en ons verkeer te analyseren.",
+      "learnMore": "Meer informatie",
+      "customize": "Aanpassen",
+      "reject": "Alles Weigeren",
+      "acceptAll": "Alles Accepteren"
+    },
+    "settings": {
+      "title": "Cookie Voorkeuren",
+      "description": "Kies welke cookies u wilt accepteren. U kunt deze instellingen op elk moment wijzigen.",
+      "essential": {
+        "title": "Essentiële Cookies",
+        "description": "Vereist voor het correct functioneren van de website. Kunnen niet worden uitgeschakeld."
+      },
+      "analytics": {
+        "title": "Analytics Cookies",
+        "description": "Helpen ons begrijpen hoe bezoekers omgaan met onze website."
+      },
+      "marketing": {
+        "title": "Marketing Cookies",
+        "description": "Gebruikt om relevante advertenties te leveren en campagne-effectiviteit te volgen."
+      },
+      "savePreferences": "Voorkeuren Opslaan",
+      "acceptAll": "Alles Accepteren"
     }
   }
 }
