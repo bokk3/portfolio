@@ -1,9 +1,7 @@
 services:
   # Service principal Next.js
   web:
-    build: 
-      context: .
-      dockerfile: Dockerfile
+    image: beukernoot/portfolio:latest
     ports:
       - "3000:3000"
     environment:
