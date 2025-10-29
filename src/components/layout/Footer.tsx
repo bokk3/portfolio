@@ -105,7 +105,17 @@ export function Footer() {
             <p className="text-sm text-gray-400 dark:text-gray-500">
               {t('copyright', { year: currentYear })}
             </p>
-            <p className="text-sm text-gray-400 dark:text-gray-500">
+            <p className="text-sm text-gray-400 dark:text-gray-500 text-center md:text-right">
+              {t('partnership.text')}{' '}
+              <a
+                href="https://www.edgeforge.eu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-blue-300 transition-colors font-medium"
+              >
+                EdgeForge
+              </a>
+              {' • '}
               {t('made')}
             </p>
           </div>
