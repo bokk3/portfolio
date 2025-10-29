@@ -1,7 +1,7 @@
 services:
   # Service principal Next.js
   web:
-    pull-policy: always
+    pull_policy: always
     image: beukernoot/portfolio:latest
     ports:
       - "3000:3000"
@@ -35,6 +35,5 @@ volumes:
   postgres_data:
 
 networks:
-  default:
+  npm_default:
     external: true
-    name: npm_default
