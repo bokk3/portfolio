@@ -3,6 +3,55 @@
 @tailwind components;
 @tailwind utilities;
 
+/* CSS Custom Properties for theme colors */
+:root {
+  --overscroll-bg: #ffffff;
+  --bg-color: #ffffff;
+}
+
+.dark {
+  --overscroll-bg: #111827;
+  --bg-color: #111827;
+}
+
+/* Root and body styling for overscroll fix */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--overscroll-bg);
+}
+
+body {
+  background-color: var(--overscroll-bg);
+  overscroll-behavior: none;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Overscroll bounce background fix */
+html::before {
+  content: '';
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: var(--overscroll-bg);
+  z-index: -999;
+  pointer-events: none;
+}
+
+html::after {
+  content: '';
+  position: fixed;
+  bottom: -100vh;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: var(--overscroll-bg);
+  z-index: -999;
+  pointer-events: none;
+}
+
 /* Custom Animations */
 @keyframes blob {
   0% {
@@ -31,11 +80,6 @@
   animation-delay: 4s;
 }
 
-/* Smooth scroll behavior */
-html {
-  scroll-behavior: smooth;
-}
-
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -43,6 +87,10 @@ html {
 
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #374151; /* gray-700 */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -54,53 +102,10 @@ html {
   background: #555;
 }
 
-/* Custom Animations */
-@keyframes blob {
-  0% {
-    transform: translate(0px, 0px) scale(1);
-  }
-  33% {
-    transform: translate(30px, -50px) scale(1.1);
-  }
-  66% {
-    transform: translate(-20px, 20px) scale(0.9);
-  }
-  100% {
-    transform: translate(0px, 0px) scale(1);
-  }
+.dark ::-webkit-scrollbar-thumb {
+  background: #6b7280; /* gray-500 */
 }
 
-.animate-blob {
-  animation: blob 7s infinite;
-}
-
-.animation-delay-2000 {
-  animation-delay: 2s;
-}
-
-.animation-delay-4000 {
-  animation-delay: 4s;
-}
-
-/* Smooth scroll behavior */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af; /* gray-400 */
 }

@@ -2,9 +2,15 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
+import { WebVitals } from '@/components/performance/WebVitals';
 import type { Metadata } from 'next';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ 
+  subsets: ['latin'],
+  display: 'swap',
+  preload: true,
+  variable: '--font-inter'
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://truyens.pro'),
@@ -85,20 +91,46 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/icon-192x192.png" />
+        <meta name="theme-color" content="#3b82f6" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
               try {
                 const theme = localStorage.getItem('portfolio-theme') || 'light';
+                const bgColor = theme === 'dark' ? '#111827' : '#ffffff';
+                
                 document.documentElement.classList.add(theme);
+                document.documentElement.style.backgroundColor = bgColor;
+                document.documentElement.style.setProperty('--overscroll-bg', bgColor);
+                
+                if (document.body) {
+                  document.body.classList.add(theme);
+                  document.body.style.backgroundColor = bgColor;
+                }
               } catch (e) {
                 document.documentElement.classList.add('light');
+                document.documentElement.style.backgroundColor = '#ffffff';
+                if (document.body) {
+                  document.body.classList.add('light');
+                  document.body.style.backgroundColor = '#ffffff';
+                }
               }
             `,
           }}
         />
       </head>
       <body className={inter.className + ' scroll-smooth'}>
+        <WebVitals />
         <ThemeProvider
           defaultTheme="light"
           storageKey="portfolio-theme"

@@ -49,8 +49,20 @@ export function ThemeProvider({
     if (!mounted) return;
 
     const root = window.document.documentElement;
+    const body = window.document.body;
+    
+    // Update documentElement
     root.classList.remove('light', 'dark');
     root.classList.add(theme);
+    
+    // Update body
+    body.classList.remove('light', 'dark');
+    body.classList.add(theme);
+    
+    // Update CSS custom properties for overscroll
+    const bgColor = theme === 'dark' ? '#111827' : '#ffffff';
+    root.style.setProperty('--overscroll-bg', bgColor);
+    body.style.backgroundColor = bgColor;
   }, [theme, mounted]);
 
   const value = {

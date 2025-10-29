@@ -1,5 +1,6 @@
 // src/app/[locale]/page.tsx
 import { Hero } from '@/components/sections/Hero';
+import { LazySection } from '@/components/ui/LazySection';
 import { Services } from '@/components/sections/Services';
 import { FeaturedProjects } from '@/components/sections/FeaturedProjects';
 import { AboutPreview } from '@/components/sections/AboutPreview';
@@ -51,11 +52,21 @@ export default function HomePage() {
   return (
     <main>
       <Hero />
-      <Services />
-      <FeaturedProjects />
-      <AboutPreview />
-      <CallToAction />
-      <ContactPreview />
+      <LazySection>
+        <Services />
+      </LazySection>
+      <LazySection>
+        <FeaturedProjects />
+      </LazySection>
+      <LazySection>
+        <AboutPreview />
+      </LazySection>
+      <LazySection>
+        <CallToAction />
+      </LazySection>
+      <LazySection>
+        <ContactPreview />
+      </LazySection>
     </main>
   );
 }
