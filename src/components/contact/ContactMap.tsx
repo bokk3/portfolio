@@ -120,7 +120,7 @@ export function ContactMap() {
                 {t('visit.description')}
               </p>
               <a
-                href="mailto:contact@truyens.pro?subject=Office Visit"
+                href="mailto:truyensboris@proton.me?subject=Office Visit"
                 className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium text-sm transition-colors"
               >
                 {t('visit.schedule')} →

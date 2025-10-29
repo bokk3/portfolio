@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
+import { saveContact, getContactsFiltered } from '@/lib/database';
 
 const contactSchema = z.object({
   name: z.string().min(2),
@@ -24,13 +25,14 @@ export async function POST(request: NextRequest) {
     // 3. Send to a CRM system
     // 4. Send notifications to your team
 
-    // Log form submission for development (remove in production)
-    if (process.env.NODE_ENV === 'development') {
-      console.log('Contact form submission:', {
-        ...validatedData,
-        timestamp: new Date().toISOString(),
-      });
-    }
+    // Save to database
+    const savedContact = saveContact({
+      ...validatedData,
+      ipAddress: request.ip || request.headers.get('x-forwarded-for') || 'unknown',
+      userAgent: request.headers.get('user-agent') || 'unknown'
+    });
+
+    console.log('Contact form saved:', savedContact.id);
 
     // Simulate email sending delay
     await new Promise(resolve => setTimeout(resolve, 1000));
@@ -38,7 +40,7 @@ export async function POST(request: NextRequest) {
     // Example: Send email using a service (uncomment and configure)
     /*
     await sendEmail({
-      to: 'contact@truyens.pro',
+      to: 'truyensboris@proton.me',
       subject: `New Contact Form: ${validatedData.subject}`,
       html: `
         <h2>New Contact Form Submission</h2>
@@ -84,6 +86,55 @@ export async function POST(request: NextRequest) {
         success: false, 
         message: 'Something went wrong. Please try again later.' 
       },
+      { status: 500 }
+    );
+  }
+}
+
+// GET endpoint to retrieve contact entries
+export async function GET(request: NextRequest) {
+  try {
+    const { searchParams } = new URL(request.url);
+    
+    // Extract query parameters
+    const status = searchParams.get('status') as any;
+    const locale = searchParams.get('locale');
+    const limit = searchParams.get('limit') ? parseInt(searchParams.get('limit')!) : 50;
+    const offset = searchParams.get('offset') ? parseInt(searchParams.get('offset')!) : 0;
+    
+    // Simple authentication check (in production, use proper auth)
+    const authHeader = request.headers.get('authorization');
+    const validToken = process.env.ADMIN_API_TOKEN || 'admin-secret-token';
+    
+    if (!authHeader || authHeader !== `Bearer ${validToken}`) {
+      return NextResponse.json(
+        { success: false, message: 'Unauthorized' },
+        { status: 401 }
+      );
+    }
+    
+    const { contacts, total } = getContactsFiltered({
+      status,
+      locale,
+      limit,
+      offset
+    });
+    
+    return NextResponse.json({
+      success: true,
+      data: {
+        contacts,
+        total,
+        limit,
+        offset,
+        hasMore: offset + limit < total
+      }
+    });
+    
+  } catch (error) {
+    console.error('Error fetching contacts:', error);
+    return NextResponse.json(
+      { success: false, message: 'Failed to fetch contacts' },
       { status: 500 }
     );
   }

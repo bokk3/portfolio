@@ -36,11 +36,11 @@ export function ContactHero() {
                                 <span>+32 479 12 44 28</span>
                             </a>
                             <a
-                                href="mailto:contact@truyens.pro"
+                                href="mailto:truyensboris@proton.me"
                                 className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm hover:bg-white/20 px-6 py-3 rounded-lg transition-colors"
                             >
                                 <Mail className="w-5 h-5" />
-                                <span>contact@truyens.pro</span>
+                                <span>truyensboris@proton.me</span>
                             </a>
                         </div>
                     </div>

@@ -31,12 +31,17 @@ export function ThemeProvider({
   const [theme, setTheme] = useState<Theme>(defaultTheme);
   const [mounted, setMounted] = useState(false);
 
-  // Initialize theme from localStorage after mount
+  // Initialize theme from localStorage or system preference after mount
   useEffect(() => {
     setMounted(true);
     const storedTheme = localStorage?.getItem(storageKey) as Theme;
+    
     if (storedTheme && (storedTheme === 'light' || storedTheme === 'dark')) {
       setTheme(storedTheme);
+    } else {
+      // Use system preference if no stored theme
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      setTheme(systemPrefersDark ? 'dark' : 'light');
     }
   }, [storageKey]);
 

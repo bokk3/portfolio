@@ -32,7 +32,7 @@ export function Footer() {
                   { name: 'github', icon: Github, href: '#' },
                   { name: 'linkedin', icon: Linkedin, href: '#' },
                   { name: 'twitter', icon: Twitter, href: '#' },
-                  { name: 'email', icon: Mail, href: 'mailto:contact@truyens.pro' },
+                  { name: 'email', icon: Mail, href: 'mailto:truyensboris@proton.me' },
                 ].map((social) => (
                   <a
                     key={social.name}

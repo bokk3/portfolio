@@ -14,9 +14,9 @@ export function ContactInfo({ locale }: ContactInfoProps) {
     {
       icon: Mail,
       title: t('email.title'),
-      value: 'contact@truyens.pro',
+      value: 'truyensboris@proton.me',
       description: t('email.description'),
-      href: 'mailto:contact@truyens.pro',
+      href: 'mailto:truyensboris@proton.me',
       color: 'bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400',
     },
     {
@@ -108,7 +108,7 @@ export function ContactInfo({ locale }: ContactInfoProps) {
         
         <div className="space-y-3">
           <a
-            href="mailto:contact@truyens.pro?subject=Quick Question"
+            href="mailto:truyensboris@proton.me?subject=Quick Question"
             className="flex items-center space-x-3 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
           >
             <MessageCircle className="w-5 h-5" />
@@ -116,7 +116,7 @@ export function ContactInfo({ locale }: ContactInfoProps) {
           </a>
           
           <a
-            href="mailto:contact@truyens.pro?subject=Schedule Meeting"
+            href="mailto:truyensboris@proton.me?subject=Schedule Meeting"
             className="flex items-center space-x-3 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
           >
             <Calendar className="w-5 h-5" />
