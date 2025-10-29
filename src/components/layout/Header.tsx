@@ -122,7 +122,7 @@ export function Header() {
               className={`md:hidden p-2 transition-colors ${
                 isScrolled
                   ? 'text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'
-                  : 'text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400'
+                  : 'text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400'
               }`}
               aria-label="Toggle menu"
             >

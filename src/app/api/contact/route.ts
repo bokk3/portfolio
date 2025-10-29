@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
     // Save to database
     const savedContact = saveContact({
       ...validatedData,
-      ipAddress: request.ip || request.headers.get('x-forwarded-for') || 'unknown',
+      ipAddress: request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || 'unknown',
       userAgent: request.headers.get('user-agent') || 'unknown'
     });
 
@@ -61,31 +61,31 @@ export async function POST(request: NextRequest) {
     */
 
     return NextResponse.json(
-      { 
-        success: true, 
-        message: 'Thank you for your message. We\'ll get back to you soon!' 
+      {
+        success: true,
+        message: 'Thank you for your message. We\'ll get back to you soon!'
       },
       { status: 200 }
     );
 
   } catch (error) {
     console.error('Contact form error:', error);
-    
+
     if (error instanceof z.ZodError) {
       return NextResponse.json(
-        { 
-          success: false, 
+        {
+          success: false,
           message: 'Invalid form data',
-          errors: error.issues 
+          errors: error.issues
         },
         { status: 400 }
       );
     }
 
     return NextResponse.json(
-      { 
-        success: false, 
-        message: 'Something went wrong. Please try again later.' 
+      {
+        success: false,
+        message: 'Something went wrong. Please try again later.'
       },
       { status: 500 }
     );
@@ -96,24 +96,24 @@ export async function POST(request: NextRequest) {
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
-    
+
     // Extract query parameters
     const status = searchParams.get('status') as any;
-    const locale = searchParams.get('locale');
+    const locale = searchParams.get('locale') || undefined;
     const limit = searchParams.get('limit') ? parseInt(searchParams.get('limit')!) : 50;
     const offset = searchParams.get('offset') ? parseInt(searchParams.get('offset')!) : 0;
-    
+
     // Authentication check
     const authError = checkAdminAuth(request);
     if (authError) return authError;
-    
+
     const { contacts, total } = getContactsFiltered({
       status,
       locale,
       limit,
       offset
     });
-    
+
     return NextResponse.json({
       success: true,
       data: {
@@ -124,7 +124,7 @@ export async function GET(request: NextRequest) {
         hasMore: offset + limit < total
       }
     });
-    
+
   } catch (error) {
     console.error('Error fetching contacts:', error);
     return NextResponse.json(
