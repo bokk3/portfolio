@@ -1,6 +1,7 @@
 services:
   # Service principal Next.js
   web:
+    pull_policy: always
     image: beukernoot/portfolio:latest
     ports:
       - "3000:3000"
@@ -10,7 +11,7 @@ services:
       - DATABASE_URL=${DATABASE_URL}
     restart: unless-stopped
     networks:
-      - app-network
+      - npm_default
     depends_on:
       - postgres
 
@@ -28,11 +29,11 @@ services:
       - "5432:5432"
     restart: unless-stopped
     networks:
-      - app-network
+      - npm_default
 
 volumes:
   postgres_data:
 
 networks:
-  app-network:
-    driver: bridge
+  npm_default:
+    external: true
