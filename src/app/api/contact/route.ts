@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
 import { saveContact, getContactsFiltered } from '@/lib/database';
+import { checkAdminAuth } from '@/lib/auth';
 
 const contactSchema = z.object({
   name: z.string().min(2),
@@ -102,16 +103,9 @@ export async function GET(request: NextRequest) {
     const limit = searchParams.get('limit') ? parseInt(searchParams.get('limit')!) : 50;
     const offset = searchParams.get('offset') ? parseInt(searchParams.get('offset')!) : 0;
     
-    // Simple authentication check (in production, use proper auth)
-    const authHeader = request.headers.get('authorization');
-    const validToken = process.env.ADMIN_API_TOKEN || 'admin-secret-token';
-    
-    if (!authHeader || authHeader !== `Bearer ${validToken}`) {
-      return NextResponse.json(
-        { success: false, message: 'Unauthorized' },
-        { status: 401 }
-      );
-    }
+    // Authentication check
+    const authError = checkAdminAuth(request);
+    if (authError) return authError;
     
     const { contacts, total } = getContactsFiltered({
       status,
